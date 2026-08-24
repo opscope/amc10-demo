@@ -207,7 +207,7 @@ ol.plist > li::before { content: counter(p) ". "; font-weight: bold; }
 .opts { display: flex; flex-wrap: wrap; gap: 2px 18px; margin: 3px 0 0 15px; }
 .opt { display: inline-flex; align-items: baseline; gap: 5px; }
 .opt b::before { content: "("; } .opt b::after { content: ")"; }
-.frac { display: inline-flex; flex-direction: column; vertical-align: -0.32em; text-align: center; font-size: 0.78em; line-height: 1.05; }
+.frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.72em; line-height: 1.2; position: relative; top: -0.08em; }
 .frac > span:first-child { border-bottom: 0.8px solid #000; padding: 0 3px; }
 .frac > span:last-child { padding: 0 3px; }
 var { font-style: italic; }
