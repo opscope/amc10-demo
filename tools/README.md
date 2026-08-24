@@ -18,6 +18,14 @@ repo root: `python3 tools/build_algebra.py`, `python3 tools/build_practice_pdf.p
   `build_algebra.py`).
 - Old URLs that were ever published must keep working: leave a redirect stub
   at the old path (see `kurs/*.html`).
+- **Index exception**: the two landing pages (`index.html`, `course/index.html`)
+  stay Russian at their clean, already-published URLs; their English mirrors are
+  `index-en.html` and `course/index-en.html`.
+- **Bilingual invariant**: every page has a version in both languages; navigation
+  never switches language (RU pages link only to RU pages, EN to EN); the only
+  cross-language link is the switcher marked `class="langlink"` that points to
+  the same page in the other language. The feedback form posts a `lang` field
+  and the worker redirects to the matching thanks page.
 
 ## Files
 

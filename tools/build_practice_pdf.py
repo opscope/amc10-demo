@@ -132,7 +132,8 @@ def page(lang):
 </body></html>"""
 
 CH = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
-for lang, out in [('ru', 'practice-test-ru.pdf'), ('en', 'practice-test.pdf')]:
+if __name__ == '__main__':
+  for lang, out in [('ru', 'practice-test-ru.pdf'), ('en', 'practice-test.pdf')]:
     src = f'/tmp/print_{lang}.html'
     open(src, 'w', encoding='utf8').write(page(lang))
     dst = f'/Users/andreikovrijnykh/amc10demo/course/{out}'

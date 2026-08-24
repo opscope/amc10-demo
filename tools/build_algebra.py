@@ -77,7 +77,7 @@ S = {
    header_eyebrow='AMC 10 Crash Course &middot; Block 1', header_h1='Block 1 &mdash; Algebra',
    header_stand='Five lessons and a test: percents and ratios, equations and sequences, quadratics, identities and tricks, absolute value. Each lesson is 45 + 45 minutes.',
    lesson_word='lesson', otherlang='Русская версия', otherhref='algebra-ru.html',
-   foot='All problems are original and do not reproduce official AMC competition problems. <a href="index.html">Course contents</a> &middot; <a href="../index.html">AMC 10 overview and practice test</a> (in Russian).',
+   foot='All problems are original and do not reproduce official AMC competition problems. <a href="index-en.html">Course contents</a> &middot; <a href="../index-en.html">AMC 10 overview and practice test</a> &middot; <a href="index-en.html#contact">leave a comment</a>.',
    title='Block 1 · Algebra · AMC 10 Crash Course',
    desc='Algebra for the AMC 10: five lessons with theory, worked examples, independent sets, and the block test.'),
 }
@@ -135,21 +135,39 @@ def page(g):
     s = S[g]
     chips = ''.join(f'<a href="#{L["anchor"]}">{L["id"]}</a>' for L in LESSONS) + '<a href="#t1">Т1</a>' if g == 'ru' else ''.join(f'<a href="#{L["anchor"]}">{L["id"]}</a>' for L in LESSONS) + '<a href="#t1">T1</a>'
     lessons = '\n'.join(lesson_html(L, g) for L in LESSONS)
-    nav = f'''<nav class="side">
-<div class="nav-t">{'Курс' if g=='ru' else 'Course'}</div>
-<a href="index.html#zachem">{'Зачем он сделан' if g=='ru' else 'Why it exists'}</a>
-<a href="index.html#ustroystvo">{'Как устроен' if g=='ru' else 'How it works'}</a>
-<a href="index.html#polzovanie">{'Как пользоваться' if g=='ru' else 'How to use it'}</a>
-<div class="nav-t">{'Программа' if g=='ru' else 'Program'}</div>
-<a href="diagnostics.html">0 · {'Диагностика' if g=='ru' else 'Diagnostics'}</a>
-<a class="here" href="{'algebra-ru.html' if g=='ru' else 'algebra.html'}">1 · {'Алгебра' if g=='ru' else 'Algebra'}</a>
-<a class="dim" href="index.html#programma">2 · {'Геометрия' if g=='ru' else 'Geometry'}</a>
-<a class="dim" href="index.html#programma">3 · {'Теория чисел' if g=='ru' else 'Number theory'}</a>
-<a class="dim" href="index.html#programma">4 · {'Комбинаторика' if g=='ru' else 'Counting'}</a>
-<a class="dim" href="index.html#programma">5 · {'Стратегия и моки' if g=='ru' else 'Strategy and mocks'}</a>
-<div class="nav-t">{'Ещё' if g=='ru' else 'More'}</div>
-<a href="../index.html">{'Справка об AMC 10 и пробный тест' if g=='ru' else 'AMC 10 overview and practice test'}</a>
-<a href="index.html#svyaz">{'Комментарии' if g=='ru' else 'Comments'}</a>
+    if g == 'ru':
+        nav = '''<nav class="side">
+<div class="nav-t">Курс</div>
+<a href="index.html#zachem">Зачем он сделан</a>
+<a href="index.html#ustroystvo">Как устроен</a>
+<a href="index.html#polzovanie">Как пользоваться</a>
+<div class="nav-t">Программа</div>
+<a href="diagnostics-ru.html">0 · Диагностика</a>
+<a class="here" href="algebra-ru.html">1 · Алгебра</a>
+<a class="dim" href="index.html#programma">2 · Геометрия</a>
+<a class="dim" href="index.html#programma">3 · Теория чисел</a>
+<a class="dim" href="index.html#programma">4 · Комбинаторика</a>
+<a class="dim" href="index.html#programma">5 · Стратегия и моки</a>
+<div class="nav-t">Ещё</div>
+<a href="../index.html">Справка об AMC 10 и пробный тест</a>
+<a href="index.html#svyaz">Комментарии</a>
+</nav>'''
+    else:
+        nav = '''<nav class="side">
+<div class="nav-t">Course</div>
+<a href="index-en.html#why">Why it exists</a>
+<a href="index-en.html#how">How it works</a>
+<a href="index-en.html#use">How to use it</a>
+<div class="nav-t">Program</div>
+<a href="diagnostics.html">0 · Diagnostics</a>
+<a class="here" href="algebra.html">1 · Algebra</a>
+<a class="dim" href="index-en.html#program">2 · Geometry</a>
+<a class="dim" href="index-en.html#program">3 · Number theory</a>
+<a class="dim" href="index-en.html#program">4 · Counting</a>
+<a class="dim" href="index-en.html#program">5 · Strategy and mocks</a>
+<div class="nav-t">More</div>
+<a href="../index-en.html">AMC 10 overview and practice test</a>
+<a href="index-en.html#contact">Comments</a>
 </nav>'''
     body = f'''<div class="layout">
 {nav}
