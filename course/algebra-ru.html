@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AMC 10 · Формат олимпиады и пробный тест</title>
-<meta name="description" content="Как устроена олимпиада AMC 10 и пробный тест из 25 оригинальных задач того же уровня. Справка на русском языке.">
+<title>Блок 1 · Алгебра · Крэш-курс AMC 10</title>
+<meta name="description" content="Алгебра для AMC 10: пять уроков с теорией, разобранными задачами, самостоятельными порциями и тест блока.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIGZpbGw9IiMwRTEwMTMiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NiAxNTYpIHNjYWxlKDEwKSI+CiAgICA8cmVjdCB4PSIwIiAgeT0iMSIgd2lkdGg9IjQiIGhlaWdodD0iMTgiIGZpbGw9IiNCNEI1QjgiIHRyYW5zZm9ybT0icm90YXRlKDE5IDQgMTkpIi8+CiAgICA8cmVjdCB4PSIxMCIgeT0iMSIgd2lkdGg9IjQiIGhlaWdodD0iMTgiIGZpbGw9IiNGRjVCMUYiLz4KICAgIDxyZWN0IHg9IjE3IiB5PSIxIiB3aWR0aD0iNCIgaGVpZ2h0PSIxOCIgZmlsbD0iI0ZBRkFGNyIvPgogICAgPHJlY3QgeD0iMjQiIHk9IjEiIHdpZHRoPSI0IiBoZWlnaHQ9IjE4IiBmaWxsPSIjQjRCNUI4Ii8+CiAgPC9nPgo8L3N2Zz4=">
 <style>
 @font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;src:url(data:font/woff2;base64,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) format('woff2');}
@@ -21,549 +21,376 @@
 --sans:'Inter Tight',-apple-system,system-ui,sans-serif;
 --body:'Inter',-apple-system,system-ui,sans-serif;
 --mono:'JetBrains Mono',ui-monospace,monospace;}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--porcelain); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.62; -webkit-font-smoothing: antialiased; }
+.layout { max-width: 62rem; margin: 0 auto; padding: clamp(2rem, 4vw, 3.5rem) clamp(1.1rem, 4vw, 2rem) 4rem; display: grid; grid-template-columns: 13.5rem minmax(0, 46rem); gap: 3rem; }
+@media (max-width: 52rem) { .layout { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; } }
+nav.side { position: sticky; top: 1.5rem; align-self: start; font-size: .88rem; }
+@media (max-width: 52rem) { nav.side { position: static; border-bottom: 1px solid var(--rule-strong); padding-bottom: 1.2rem; } }
+nav.side .nav-t { font-family: var(--mono); font-size: .68rem; letter-spacing: .13em; text-transform: uppercase; color: var(--ash); margin: 1.1rem 0 .4rem; }
+nav.side .nav-t:first-child { margin-top: 0; }
+nav.side a { display: block; color: var(--smoke); text-decoration: none; padding: .22rem 0 .22rem .7rem; border-left: 2px solid var(--whisper); }
+nav.side a:hover { color: var(--tang-deep); border-left-color: var(--tang); }
+nav.side a.here { color: var(--ink); border-left-color: var(--tang); font-weight: 600; }
+nav.side a.dim { color: var(--mist); }
+nav.side a.dim::after { content: " ·"; color: var(--mist); }
+main { min-width: 0; }
+section { margin-bottom: 3.2rem; }
+.eyebrow { font-family: var(--mono); font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--tang); margin-bottom: 1rem; }
+h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(2.1rem, 5.5vw, 3rem); line-height: 1.08; letter-spacing: -.01em; margin: 0 0 1rem; text-wrap: balance; }
+.standfirst { font-size: 1.06rem; color: var(--ash); margin: 0; max-width: 36rem; }
+h2 { font-family: var(--serif); font-weight: 400; font-size: 1.65rem; margin: 0 0 1.2rem; padding-bottom: .55rem; border-bottom: 1px solid var(--rule-strong); text-wrap: balance; }
+h3 { font-family: var(--mono); font-size: .72rem; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; color: var(--ash); margin: 2rem 0 .6rem; }
+p { margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+a { color: var(--tang-deep); }
+.notice { background: var(--paper); border-left: 3px solid var(--tang); padding: 1.05rem 1.3rem; font-size: .93rem; color: var(--smoke); margin: 1.6rem 0 0; }
+.notice strong { color: var(--ink); }
+.tblwrap { overflow-x: auto; }
+table.map { width: 100%; min-width: 34rem; border-collapse: collapse; font-size: .93rem; margin-bottom: 1rem; }
+table.map th { font-family: var(--mono); font-size: .68rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--ash); text-align: left; padding: .5rem .6rem .5rem 0; border-bottom: 1px solid var(--rule-strong); }
+table.map td { padding: .55rem .6rem .55rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+table.map td.num { font-family: var(--mono); font-size: .8rem; color: var(--tang-deep); white-space: nowrap; }
+table.map td.hours { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ritm { background: var(--paper); padding: 1.1rem 1.3rem; font-size: .95rem; margin-top: 1.4rem; }
+.ritm b { font-family: var(--mono); font-size: .78rem; color: var(--tang-deep); font-weight: 500; }
+.lesson { border-top: 2px solid var(--ink); padding-top: 1.4rem; margin-top: 2.6rem; }
+.lesson-id { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--tang); margin-bottom: .4rem; }
+.lesson h2 { border-bottom: none; padding-bottom: 0; margin-bottom: .4rem; font-size: 1.55rem; }
+.lesson-meta { font-family: var(--mono); font-size: .74rem; color: var(--ash); margin-bottom: 1.3rem; }
+.lesson-meta span { margin-right: 1.2rem; }
+.lesson-meta span::before { content: "· "; color: var(--tang); }
+.theory { border-left: 2px solid var(--whisper); padding-left: 1.2rem; }
+.theory .frm { background: var(--paper); padding: .7rem 1rem; margin: .8rem 0; font-size: .95rem; }
+.theory .frm b { color: var(--tang-deep); }
+.wp { margin: 1.4rem 0; padding: 1.1rem 1.3rem; background: var(--paper); }
+.wp-num { font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--tang-deep); margin-bottom: .5rem; }
+.wp .sol { margin-top: .7rem; padding-top: .7rem; border-top: 1px dashed var(--rule-strong); font-size: .95rem; color: var(--smoke); }
+.wp .sol b { color: var(--ink); }
+ol.selfp { list-style: none; margin: 0; padding: 0; counter-reset: sp; }
+ol.selfp > li { counter-increment: sp; display: grid; grid-template-columns: 2.3rem 1fr; align-items: baseline; padding: 1rem 0; border-top: 1px solid var(--rule); }
+ol.selfp > li::before { content: counter(sp); font-family: var(--serif); font-size: 1.1rem; color: var(--tang); }
+ol.selfp .q { grid-column: 2; }
+ol.selfp details { grid-column: 2; margin-top: .5rem; font-size: .92rem; }
+details.hint > summary, details.full > summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: .45rem; font-family: var(--mono); font-size: .7rem; font-weight: 500; letter-spacing: .11em; text-transform: uppercase; color: var(--tang-deep); padding: .3rem 0; }
+details summary::-webkit-details-marker { display: none; }
+details.hint > summary::before, details.full > summary::before { content: "+"; }
+details[open].hint > summary::before, details[open].full > summary::before { content: "\2212"; }
+details.hint > div, details.full > div { padding: .5rem .9rem .6rem; background: var(--paper); color: var(--smoke); }
+details.full > div b { color: var(--ink); }
+summary:focus-visible { outline: 2px solid var(--tang); outline-offset: 2px; }
+.frac { display: inline-flex; flex-direction: column; vertical-align: middle; position: relative; top: -0.1em; text-align: center; font-size: .75em; line-height: 1.18; }
+.frac > span:first-child { border-bottom: 1px solid currentColor; padding: 0 .22em; }
+.frac > span:last-child { padding: 0 .22em; }
+var { font-family: var(--serif); font-style: italic; font-size: 1.05em; }
+.soon { border-top: 1px solid var(--rule); padding: 1.1rem 0; display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: baseline; }
+.soon .t { color: var(--smoke); }
+.soon .tag { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mist); }
+.toc-item { border-top: 1px solid var(--rule); padding: 1rem 0; display: grid; grid-template-columns: 3rem 1fr auto; gap: 1rem; align-items: baseline; }
+.toc-item .n { font-family: var(--serif); font-size: 1.2rem; color: var(--tang); }
+.toc-item .tag { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--mist); white-space: nowrap; }
+.toc-item .tag.go { color: var(--tang-deep); }
+.toc-item .d { color: var(--ash); font-size: .9rem; margin-top: .15rem; }
+.parent { background: var(--ink); color: var(--porcelain); padding: 1.3rem 1.5rem; margin-top: 1.6rem; }
+.parent h3 { color: var(--tang); margin-top: 0; }
+.parent p { color: var(--mist); font-size: .94rem; }
+.parent b { color: var(--porcelain); }
+form.fb { background: var(--paper); padding: 1.5rem; display: grid; gap: 1rem; }
+form.fb label { display: block; font-family: var(--mono); font-size: .7rem; font-weight: 500; letter-spacing: .11em; text-transform: uppercase; color: var(--ash); margin-bottom: .35rem; }
+form.fb input, form.fb textarea { width: 100%; border: 1px solid var(--rule-strong); background: var(--porcelain); padding: .6rem .75rem; font: inherit; font-size: .95rem; color: var(--ink); border-radius: 0; }
+form.fb input:focus, form.fb textarea:focus { outline: 2px solid var(--tang); outline-offset: -1px; border-color: transparent; }
+form.fb textarea { min-height: 7rem; resize: vertical; }
+form.fb .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: end; }
+@media (max-width: 40rem) { form.fb .row2 { grid-template-columns: 1fr; } }
+form.fb button { justify-self: start; font-family: var(--mono); font-size: .78rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--porcelain); background: var(--ink); border: none; padding: .8rem 1.6rem; cursor: pointer; }
+form.fb button:hover { background: var(--tang-deep); }
+form.fb .fine { font-size: .82rem; color: var(--ash); margin: 0; }
+footer { border-top: 1px solid var(--rule-strong); padding-top: 1.3rem; font-size: .86rem; color: var(--ash); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1.2rem 0 0; }
+.chips a { font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--tang-deep); text-decoration: none; border: 1px solid var(--rule-strong); padding: .3rem .7rem; }
+.chips a:hover { background: var(--paper); }
+.langlink { font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+ol.tprob { list-style: none; margin: 0; padding: 0; counter-reset: tp; }
+ol.tprob > li { counter-increment: tp; display: grid; grid-template-columns: 2.5rem 1fr; align-items: baseline; padding: 1.05rem 0; border-top: 1px solid var(--rule); }
+ol.tprob > li::before { content: counter(tp); font-family: var(--serif); font-size: 1.15rem; color: var(--tang); font-variant-numeric: tabular-nums; }
+ol.tprob .q { grid-column: 2; }
+.opts { grid-column: 2; margin-top: .6rem; display: grid; grid-template-columns: repeat(5, 1fr); gap: .4rem; }
+@media (max-width: 40rem) { .opts { grid-template-columns: repeat(2, 1fr); } }
+.opt { background: var(--paper); padding: .42rem .6rem; font-size: .93rem; display: flex; align-items: baseline; gap: .4rem; min-width: 0; }
+.opt b { font-family: var(--mono); font-size: .72rem; color: var(--tang-deep); font-weight: 500; flex: none; }
+details.answers { background: var(--ink); color: var(--porcelain); margin-top: 2rem; }
+details.answers summary { cursor: pointer; padding: 1.05rem 1.4rem; font-family: var(--mono); font-size: .76rem; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; color: var(--tang); list-style: none; display: flex; align-items: center; gap: .55rem; }
+details.answers summary::-webkit-details-marker { display: none; }
+details.answers summary::before { content: "+"; }
+details.answers[open] summary::before { content: "\2212"; }
+.answers-body { padding: .3rem 1.4rem 1.5rem; }
+.key { display: grid; grid-template-columns: repeat(auto-fill, minmax(3.2rem, 1fr)); gap: .35rem; margin-bottom: 1.4rem; }
+.key div { border: 1px solid var(--rule-dark); padding: .38rem; text-align: center; font-family: var(--mono); font-size: .82rem; }
+.key div span { color: var(--mist); opacity: .7; }
+.key div b { color: var(--tang); font-weight: 500; }
+.hints { font-size: .93rem; color: var(--mist); }
+.hints p { margin-bottom: .7rem; }
+.hints b { color: var(--porcelain); font-family: var(--mono); font-size: .82rem; font-weight: 500; }
+.hints var { color: var(--porcelain); }
+.pdfline { background: var(--paper); border-left: 3px solid var(--tang); padding: .9rem 1.2rem; font-size: .93rem; margin-top: 1.6rem; }
+
 </style>
 <script data-goatcounter="https://helios-demo.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
-<style>
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  background: var(--porcelain);
-  color: var(--ink);
-  font-family: var(--body);
-  font-size: 17px;
-  line-height: 1.62;
-  -webkit-font-smoothing: antialiased;
-}
-.wrap {
-  max-width: 46rem;
-  margin: 0 auto;
-  padding: clamp(2.2rem, 5vw, 4.5rem) clamp(1.1rem, 4vw, 2rem) 4rem;
-}
-section { margin-bottom: 3.2rem; }
-
-.eyebrow {
-  font-family: var(--mono);
-  font-size: .72rem;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  color: var(--tang);
-  margin-bottom: 1rem;
-}
-h1 {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: clamp(2.3rem, 6.5vw, 3.4rem);
-  line-height: 1.08;
-  letter-spacing: -.01em;
-  margin: 0 0 1rem;
-  text-wrap: balance;
-}
-.standfirst {
-  font-size: 1.08rem;
-  color: var(--ash);
-  margin: 0;
-  max-width: 36rem;
-}
-h2 {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 1.75rem;
-  margin: 0 0 1.2rem;
-  padding-bottom: .55rem;
-  border-bottom: 1px solid var(--rule-strong);
-  text-wrap: balance;
-}
-h3 {
-  font-family: var(--mono);
-  font-size: .72rem;
-  font-weight: 500;
-  letter-spacing: .13em;
-  text-transform: uppercase;
-  color: var(--ash);
-  margin: 0 0 .5rem;
-}
-p { margin: 0 0 1rem; }
-p:last-child { margin-bottom: 0; }
-
-.notice {
-  background: var(--paper);
-  border-left: 3px solid var(--tang);
-  padding: 1.05rem 1.3rem;
-  font-size: .93rem;
-  color: var(--smoke);
-  margin: 2.2rem 0 3.2rem;
-}
-.notice strong { color: var(--ink); }
-
-.spec { border-top: 1px solid var(--rule-strong); }
-.spec-row {
-  display: grid;
-  grid-template-columns: 10.5rem 1fr;
-  gap: 1rem;
-  padding: .85rem 0;
-  border-bottom: 1px solid var(--rule);
-  align-items: baseline;
-}
-.spec-key {
-  font-family: var(--mono);
-  font-size: .72rem;
-  font-weight: 500;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--ash);
-}
-.spec-val { font-size: .97rem; }
-.spec-val em { color: var(--ash); }
-@media (max-width: 34rem) {
-  .spec-row { grid-template-columns: 1fr; gap: .15rem; }
-}
-
-.scoring {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: .8rem;
-  margin-bottom: 1.3rem;
-}
-.score-card {
-  background: var(--paper);
-  padding: 1.05rem 1.15rem .95rem;
-  border-top: 2px solid var(--tang);
-}
-.score-num {
-  font-family: var(--serif);
-  font-size: 2.4rem;
-  line-height: 1;
-  color: var(--ink);
-  font-variant-numeric: tabular-nums;
-  margin-bottom: .25rem;
-}
-.score-lbl { font-size: .85rem; color: var(--ash); }
-@media (max-width: 34rem) { .scoring { grid-template-columns: 1fr; } }
-
-.topics { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; margin-bottom: 1.3rem; }
-@media (max-width: 34rem) { .topics { grid-template-columns: 1fr; } }
-.topics .yes h3 { color: var(--tang-deep); }
-.topic-list { margin: 0; padding-left: 1.15rem; color: var(--smoke); font-size: .95rem; }
-.topic-list li { margin-bottom: .35rem; }
-
-.test-head {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .4rem 1.5rem;
-  font-family: var(--mono);
-  font-size: .76rem;
-  color: var(--ash);
-  letter-spacing: .05em;
-  margin-bottom: 2rem;
-}
-.test-head span::before { content: "· "; color: var(--tang); }
-
-ol.problems {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  counter-reset: prob;
-}
-ol.problems > li {
-  counter-increment: prob;
-  display: grid;
-  grid-template-columns: 2.5rem 1fr;
-  align-items: baseline;
-  padding: 1.15rem 0;
-  border-top: 1px solid var(--rule);
-}
-ol.problems > li::before {
-  content: counter(prob);
-  font-family: var(--serif);
-  font-size: 1.15rem;
-  color: var(--tang);
-  font-variant-numeric: tabular-nums;
-}
-.q { grid-column: 2; }
-.opts {
-  grid-column: 2;
-  margin-top: .65rem;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: .4rem;
-}
-@media (max-width: 40rem) {
-  .opts { grid-template-columns: repeat(2, 1fr); }
-  ol.problems > li { grid-template-columns: 2rem 1fr; }
-}
-.opt {
-  background: var(--paper);
-  padding: .42rem .6rem;
-  font-size: .93rem;
-  display: flex;
-  align-items: baseline;
-  gap: .4rem;
-  min-width: 0;
-}
-.opt b {
-  font-family: var(--mono);
-  font-size: .72rem;
-  color: var(--tang-deep);
-  font-weight: 500;
-  flex: none;
-}
-
-.frac {
-  display: inline-flex;
-  flex-direction: column;
-  vertical-align: -.42em;
-  text-align: center;
-  font-size: .82em;
-  line-height: 1.15;
-}
-.frac > span:first-child { border-bottom: 1px solid currentColor; padding: 0 .22em; }
-.frac > span:last-child { padding: 0 .22em; }
-var { font-family: var(--serif); font-style: italic; font-size: 1.05em; }
-
-details.answers {
-  background: var(--ink);
-  color: var(--porcelain);
-  margin-top: 2.5rem;
-}
-details.answers summary {
-  cursor: pointer;
-  padding: 1.05rem 1.4rem;
-  font-family: var(--mono);
-  font-size: .76rem;
-  font-weight: 500;
-  letter-spacing: .13em;
-  text-transform: uppercase;
-  color: var(--tang);
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: .55rem;
-}
-details.answers summary::-webkit-details-marker { display: none; }
-details.answers summary::before { content: "+"; font-size: 1rem; }
-details.answers[open] summary::before { content: "\2212"; }
-details.answers summary:focus-visible { outline: 2px solid var(--tang); outline-offset: -2px; }
-.answers-body { padding: .3rem 1.4rem 1.6rem; }
-.key {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(3.2rem, 1fr));
-  gap: .35rem;
-  margin-bottom: 1.6rem;
-}
-.key div {
-  border: 1px solid var(--rule-dark);
-  padding: .38rem;
-  text-align: center;
-  font-family: var(--mono);
-  font-size: .82rem;
-  font-variant-numeric: tabular-nums;
-}
-.key div span { color: var(--mist); opacity: .7; }
-.key div b { color: var(--tang); font-weight: 500; }
-.hints { font-size: .93rem; color: var(--mist); }
-.hints p { margin-bottom: .85rem; }
-.hints p b { color: var(--porcelain); font-family: var(--mono); font-size: .82rem; font-weight: 500; }
-.hints var { color: var(--porcelain); }
-
-footer {
-  border-top: 1px solid var(--rule-strong);
-  padding-top: 1.3rem;
-  font-size: .86rem;
-  color: var(--ash);
-}
-footer a { color: var(--tang-deep); }
-</style>
-
-<div class="wrap">
-
-<header style="margin-bottom:3.2rem">
-  <div class="eyebrow">AMC 10 &middot; American Mathematics Competition</div>
-  <h1>Формат олимпиады и&nbsp;пробный тест</h1>
-  <p class="standfirst">Справка для преподавателей и родителей на русском языке: как устроен экзамен, что он проверяет, и 25 оригинальных задач того же уровня для пробного прогона.</p>
+<div class="layout">
+<nav class="side">
+<div class="nav-t">Курс</div>
+<a href="index.html#zachem">Зачем он сделан</a>
+<a href="index.html#ustroystvo">Как устроен</a>
+<a href="index.html#polzovanie">Как пользоваться</a>
+<div class="nav-t">Программа</div>
+<a href="diagnostics.html">0 · Диагностика</a>
+<a class="here" href="algebra-ru.html">1 · Алгебра</a>
+<a class="dim" href="index.html#programma">2 · Геометрия</a>
+<a class="dim" href="index.html#programma">3 · Теория чисел</a>
+<a class="dim" href="index.html#programma">4 · Комбинаторика</a>
+<a class="dim" href="index.html#programma">5 · Стратегия и моки</a>
+<div class="nav-t">Ещё</div>
+<a href="../index.html">Справка об AMC 10 и пробный тест</a>
+<a href="index.html#svyaz">Комментарии</a>
+</nav>
+<main>
+<header style="margin-bottom:2.2rem">
+<div class="eyebrow">Крэш-курс AMC 10 &middot; Блок 1 &nbsp;&middot;&nbsp; <a class="langlink" href="algebra.html">English version</a></div>
+<h1>Блок 1 &mdash; Алгебра</h1>
+<p class="standfirst">Пять уроков и тест: проценты и отношения, уравнения и прогрессии, квадратный трёхчлен, тождества и трюки, модуль. Каждый урок &mdash; 45 + 45 минут.</p>
+<div class="chips"><a href="#u11">1.1</a><a href="#u12">1.2</a><a href="#u13">1.3</a><a href="#u14">1.4</a><a href="#u15">1.5</a><a href="#t1">Т1</a></div>
 </header>
-
-<div class="notice">
-  <strong>Об авторских правах.</strong> Задачи официальных олимпиад AMC защищены авторским правом MAA и здесь не воспроизводятся. Все 25 задач ниже составлены специально для этой подборки: они повторяют формат, тематику и нарастающую сложность настоящего AMC&nbsp;10, но не являются заданиями какого-либо реального года. Официальные тесты прошлых лет свободно доступны на сайте MAA и в вики Art of Problem Solving.
+<section class="lesson" id="u11">
+<div class="lesson-id">Крэш-курс AMC 10 &middot; Блок 1 &middot; урок 1.1</div>
+<h2>Проценты, отношения, средние, движение</h2>
+<div class="lesson-meta"><span>A: теория + разобранные, 45 мин</span><span>B: самостоятельная + разбор, 45 мин</span></div>
+<h3>Теория (15 минут)</h3>
+<div class="theory">
+<p><b>Проценты через множители.</b> Рост на 20&nbsp;% &mdash; это умножение на 1,2; падение на 25&nbsp;% &mdash; умножение на 0,75. Последовательные изменения перемножаются: +20&nbsp;% и затем &minus;25&nbsp;% дают 1,2&nbsp;&middot;&nbsp;0,75&nbsp;=&nbsp;0,9, то есть &minus;10&nbsp;%. Никогда не складывайте проценты от разных баз.</p>
+<div class="frm">Изменение на <b>p&nbsp;%</b> = умножение на <b>(1 + p/100)</b>. Цепочка изменений = произведение множителей.</div>
+<p><b>Отношения через части.</b> Если величины относятся как 3&nbsp;:&nbsp;4, введите размер одной части <var>k</var>: величины равны 3<var>k</var> и 4<var>k</var>. Составные отношения сшиваются через общий член: из <var>a</var>&nbsp;:&nbsp;<var>b</var> = 2&nbsp;:&nbsp;3 и <var>b</var>&nbsp;:&nbsp;<var>c</var> = 4&nbsp;:&nbsp;5 приводим <var>b</var> к 12 и получаем <var>a</var>&nbsp;:&nbsp;<var>b</var>&nbsp;:&nbsp;<var>c</var> = 8&nbsp;:&nbsp;12&nbsp;:&nbsp;15.</p>
+<p><b>Средние.</b> Среднее арифметическое = сумма / количество; почти все задачи о среднем решаются через <b>сумму</b>: узнайте сумму до и после изменения. Взвешенное среднее лежит между групповыми средними, ближе к большей группе.</p>
+<p><b>Движение.</b> Путь = скорость &times; время. Средняя скорость &mdash; это ВЕСЬ путь на ВСЁ время, а не среднее скоростей: на равных отрезках пути она равна <span class="frac"><span>2<var>v</var><sub>1</sub><var>v</var><sub>2</sub></span><span><var>v</var><sub>1</sub> + <var>v</var><sub>2</sub></span></span> и всегда меньше среднего арифметического. Перевод единиц: 1&nbsp;м/с = 3,6&nbsp;км/ч.</p></div>
+<h3>Разобранные задачи (30 минут)</h3>
+<div class="wp"><div class="wp-num">Разбор 1 · проценты</div><div>Цена сначала выросла на 25&nbsp;%, потом снизилась на 20&nbsp;%. Как итог соотносится с началом?</div>
+<div class="sol"><b>Решение.</b> Множители: 1,25&nbsp;&middot;&nbsp;0,8 = 1. Цена не изменилась. Обратите внимание: +25 и &minus;20 &laquo;не сокращаются&raquo; в голове, но сокращаются в множителях: 5/4&nbsp;&middot;&nbsp;4/5 = 1. Дроби здесь быстрее десятичных.</div></div><div class="wp"><div class="wp-num">Разбор 2 · отношения</div><div>В классе отношение мальчиков к девочкам 3&nbsp;:&nbsp;4. Пришли 6 мальчиков, и отношение стало 9&nbsp;:&nbsp;8. Сколько человек теперь в классе?</div>
+<div class="sol"><b>Решение.</b> Было 3<var>k</var> и 4<var>k</var>. Стало: <span class="frac"><span>3<var>k</var> + 6</span><span>4<var>k</var></span></span> = <span class="frac"><span>9</span><span>8</span></span>. Перемножаем крест-накрест: 24<var>k</var> + 48 = 36<var>k</var>, откуда <var>k</var> = 4. Теперь в классе (12 + 6) + 16 = <b>34</b>. Проверка: 18&nbsp;:&nbsp;16 = 9&nbsp;:&nbsp;8. Верно.</div></div><div class="wp"><div class="wp-num">Разбор 3 · средняя скорость</div><div>Туда ехали со скоростью 60 км/ч, обратно той же дорогой &mdash; 40 км/ч. Какова средняя скорость за всю поездку?</div>
+<div class="sol"><b>Решение.</b> Пусть путь в одну сторону <var>d</var>. Время: <var>d</var>/60 + <var>d</var>/40 = <var>d</var>&nbsp;&middot;&nbsp;5/120 = <var>d</var>/24. Средняя = 2<var>d</var> &divide; (<var>d</var>/24) = <b>48 км/ч</b>. Не 50! Формула 2&middot;60&middot;40/(60+40) даёт то же мгновенно. На AMC ответ &laquo;среднее арифметическое скоростей&raquo; почти всегда стоит среди вариантов как ловушка.</div></div><div class="wp"><div class="wp-num">Разбор 4 · взвешенное среднее</div><div>Средний балл девочек 90, мальчиков 80, средний по классу 84. Какая доля класса &mdash; мальчики?</div>
+<div class="sol"><b>Решение.</b> Пусть доля мальчиков <var>m</var>. Тогда 80<var>m</var> + 90(1&nbsp;&minus;&nbsp;<var>m</var>) = 84, то есть 90 &minus; 10<var>m</var> = 84, <var>m</var> = 0,6: <b>60&nbsp;%</b>. Быстрая проверка рычагом: 84 отстоит от 80 на 4, от 90 на 6; веса обратны расстояниям, 6&nbsp;:&nbsp;4 = 3&nbsp;:&nbsp;2 в пользу мальчиков.</div></div>
+<h3>Самостоятельная порция (30 минут, потом разбор 15)</h3>
+<p>Подсказку открываем после честной попытки; решение &mdash; после ответа или второй попытки.</p>
+<ol class="selfp"><li><div class="q">20&nbsp;% от 30&nbsp;% числа равны 12. Найдите число.</div>
+<details class="hint"><summary>Подсказка</summary><div>20&nbsp;% от 30&nbsp;% &mdash; это один множитель: 0,2&nbsp;&middot;&nbsp;0,3.</div></details>
+<details class="full"><summary>Решение</summary><div>0,06<var>x</var> = 12, значит <var>x</var> = <b>200</b>.</div></details></li><li><div class="q">Товар подешевел на 50&nbsp;%. На сколько процентов он должен подорожать, чтобы вернуться к прежней цене?</div>
+<details class="hint"><summary>Подсказка</summary><div>Новая база меньше старой. Ищите множитель, который вернёт 0,5 к единице.</div></details>
+<details class="full"><summary>Решение</summary><div>0,5&nbsp;&middot;&nbsp;<var>t</var> = 1, значит <var>t</var> = 2: подорожать на <b>100&nbsp;%</b>. Проценты вниз и вверх не симметричны, потому что базы разные.</div></details></li><li><div class="q">Смешали 2 литра 10-процентного сока с 3 литрами 20-процентного. Какова концентрация смеси?</div>
+<details class="hint"><summary>Подсказка</summary><div>Считайте чистый сок в литрах, отдельно от воды.</div></details>
+<details class="full"><summary>Решение</summary><div>Чистого сока 0,2 + 0,6 = 0,8 л на 5 л смеси: <b>16&nbsp;%</b>. Это взвешенное среднее 10 и 20 с весами 2&nbsp;:&nbsp;3.</div></details></li><li><div class="q"><var>a</var>&nbsp;:&nbsp;<var>b</var> = 2&nbsp;:&nbsp;3 и <var>b</var>&nbsp;:&nbsp;<var>c</var> = 4&nbsp;:&nbsp;5. Найдите <var>a</var>&nbsp;:&nbsp;<var>c</var>.</div>
+<details class="hint"><summary>Подсказка</summary><div>Приведите <var>b</var> к общему значению в обоих отношениях.</div></details>
+<details class="full"><summary>Решение</summary><div><var>b</var> = 12: тогда <var>a</var> = 8, <var>c</var> = 15. Ответ <b>8&nbsp;:&nbsp;15</b>.</div></details></li><li><div class="q">Среднее семи чисел равно 15. Добавили восьмое число, и среднее стало 16. Какое число добавили?</div>
+<details class="hint"><summary>Подсказка</summary><div>Работайте с суммами: сумма до и сумма после.</div></details>
+<details class="full"><summary>Решение</summary><div>Было 105, стало 16&nbsp;&middot;&nbsp;8 = 128. Добавили <b>23</b>.</div></details></li><li><div class="q">Первую половину пути автомобиль ехал со скоростью 30 км/ч, вторую половину &mdash; 60 км/ч. Какова средняя скорость?</div>
+<details class="hint"><summary>Подсказка</summary><div>Половины равны по ПУТИ, значит время на них разное.</div></details>
+<details class="full"><summary>Решение</summary><div>2&nbsp;&middot;&nbsp;30&nbsp;&middot;&nbsp;60 / (30 + 60) = <b>40 км/ч</b>.</div></details></li><li><div class="q">Поезд длиной 200 метров проезжает мимо столба за 10 секунд. Какова его скорость в км/ч?</div>
+<details class="hint"><summary>Подсказка</summary><div>&laquo;Мимо столба&raquo; значит: поезд проходит расстояние, равное собственной длине.</div></details>
+<details class="full"><summary>Решение</summary><div>20 м/с. Перевод: &times;3,6, то есть <b>72 км/ч</b>.</div></details></li><li><div class="q">Зарплату повысили на 10&nbsp;%, а через год ещё на 10&nbsp;%. На сколько процентов она выросла за два года?</div>
+<details class="hint"><summary>Подсказка</summary><div>Множители, не сложение.</div></details>
+<details class="full"><summary>Решение</summary><div>1,1&nbsp;&middot;&nbsp;1,1 = 1,21: на <b>21&nbsp;%</b>. Лишний 1&nbsp;% &mdash; это &laquo;процент на процент&raquo;, десять процентов от десяти.</div></details></li></ol>
+<h3>&#9733; Задача со звёздочкой (уровень AMC №11&ndash;15)</h3>
+<ol class="selfp" style="counter-reset: sp 8"><li><div class="q">В сосуде 40-процентный раствор кислоты. Четверть содержимого отлили и долили водой; затем ещё раз отлили четверть и долили водой. Какова теперь концентрация?</div>
+<details class="hint"><summary>Подсказка</summary><div>После каждой замены кислоты остаётся 3/4 от прежней.</div></details>
+<details class="full"><summary>Решение</summary><div>Каждая замена умножает количество кислоты на 3/4: 40&nbsp;%&nbsp;&middot;&nbsp;(3/4)<sup>2</sup> = <b>22,5&nbsp;%</b>.</div></details></li></ol>
+<div class="parent"><h3>Разбор для родителя (15 минут)</h3>
+<p>Сверьте ответы: <b>200 · 100 % · 16 % · 8:15 · 23 · 40 км/ч · 72 км/ч · 21 %</b>. Норма урока &mdash; 6 из 8. Ошибки в 1&ndash;2 и 8 &mdash; перечитать &laquo;проценты через множители&raquo;; в 3 и 5 &mdash; &laquo;средние&raquo;; в 4 &mdash; &laquo;отношения через части&raquo;; в 6&ndash;7 &mdash; &laquo;движение&raquo;. Задачи с ошибками вернутся в начало следующей половинки B.</p></div>
+</section>
+<section class="lesson" id="u12">
+<div class="lesson-id">Крэш-курс AMC 10 &middot; Блок 1 &middot; урок 1.2</div>
+<h2>Уравнения и системы, работа и смеси, прогрессии</h2>
+<div class="lesson-meta"><span>A: теория + разобранные, 45 мин</span><span>B: самостоятельная + разбор, 45 мин</span></div>
+<h3>Теория (15 минут)</h3>
+<div class="theory">
+<p><b>Линейные уравнения и системы.</b> Раскрыть скобки, собрать <var>x</var> слева, числа справа, поделить. В системе из двух уравнений выражайте ту переменную, у которой коэффициент 1, и подставляйте во второе. Каждый найденный ответ подставляйте обратно: проверка стоит десять секунд и ловит половину ошибок.</p>
+<p><b>Задачи на работу.</b> Ключ &mdash; производительность: доля работы в час. Кран, наполняющий бассейн за 6 часов, делает 1/6 работы в час. Производительности складываются: вместе кран &laquo;за 6&raquo; и кран &laquo;за 3&raquo; дают 1/6 + 1/3 = 1/2 работы в час, то есть 2 часа на всё.</p>
+<div class="frm">Работа за час = <span class="frac"><span>1</span><span>время в одиночку</span></span>. Совместное время = <span class="frac"><span>1</span><span>сумма производительностей</span></span>.</div>
+<p><b>Смеси.</b> Следите за чистым веществом, а не за процентами: сколько литров чистого сока/кислоты было и стало. Вода при доливании добавляет объём, но не вещество.</p>
+<p><b>Прогрессии.</b> Арифметическая: <var>a</var><sub><var>n</var></sub> = <var>a</var><sub>1</sub> + (<var>n</var>&nbsp;&minus;&nbsp;1)<var>d</var>; сумма = <span class="frac"><span><var>a</var><sub>1</sub> + <var>a</var><sub><var>n</var></sub></span><span>2</span></span>&nbsp;&middot;&nbsp;<var>n</var> (среднее первого и последнего на количество). Геометрическая: <var>b</var><sub><var>n</var></sub> = <var>b</var><sub>1</sub><var>r</var><sup><var>n</var>&minus;1</sup>; сумма = <var>b</var><sub>1</sub><span class="frac"><span><var>r</var><sup><var>n</var></sup> &minus; 1</span><span><var>r</var> &minus; 1</span></span> (при <var>r</var> &ne; 1).</p></div>
+<h3>Разобранные задачи (30 минут)</h3>
+<div class="wp"><div class="wp-num">Разбор 1 · система</div><div>3 ручки и 2 тетради стоят 240 рублей; 1 ручка и 4 тетради &mdash; 180. Сколько стоит ручка?</div>
+<div class="sol"><b>Решение.</b> Из второго уравнения <var>p</var> = 180 &minus; 4<var>t</var>. Подставляем: 3(180 &minus; 4<var>t</var>) + 2<var>t</var> = 240, то есть 540 &minus; 10<var>t</var> = 240, <var>t</var> = 30 и <var>p</var> = <b>60</b>. Проверка: 3&middot;60 + 2&middot;30 = 240. Верно.</div></div><div class="wp"><div class="wp-num">Разбор 2 · работа</div><div>Одна труба наполняет бассейн за 10 часов, другая &mdash; за 15. За сколько наполнят вместе?</div>
+<div class="sol"><b>Решение.</b> Производительности: 1/10 + 1/15 = 1/6 бассейна в час. Значит, вместе &mdash; <b>6 часов</b>. Типовая ловушка &laquo;(10+15)/2&raquo; неверна: вместе всегда быстрее, чем самая быстрая труба в одиночку.</div></div><div class="wp"><div class="wp-num">Разбор 3 · смесь</div><div>В 5 литрах сока концентрация 12&nbsp;%. Сколько воды долить, чтобы стало 8&nbsp;%?</div>
+<div class="sol"><b>Решение.</b> Чистого сока 0,12&nbsp;&middot;&nbsp;5 = 0,6 л, и он не меняется. Новый объём: 0,6 / 0,08 = 7,5 л. Долить <b>2,5 литра</b>. Вся задача &mdash; одно деление, если следить за веществом, а не за процентами.</div></div><div class="wp"><div class="wp-num">Разбор 4 · прогрессии</div><div>Найдите сумму 3 + 6 + 12 + &hellip; + 384.</div>
+<div class="sol"><b>Решение.</b> Это геометрическая прогрессия: <var>b</var><sub>1</sub> = 3, <var>r</var> = 2. Последний член 384 = 3&nbsp;&middot;&nbsp;2<sup>7</sup>, значит членов 8. Сумма = 3(2<sup>8</sup> &minus; 1)/(2 &minus; 1) = 3&nbsp;&middot;&nbsp;255 = <b>765</b>. Быстрая проверка для <var>r</var> = 2: сумма = удвоенный последний член минус первый: 768 &minus; 3 = 765.</div></div>
+<h3>Самостоятельная порция (30 минут, потом разбор 15)</h3>
+<p>Подсказку открываем после честной попытки; решение &mdash; после ответа или второй попытки.</p>
+<ol class="selfp"><li><div class="q">Решите уравнение 5(<var>x</var> &minus; 2) = 3<var>x</var> + 8.</div>
+<details class="hint"><summary>Подсказка</summary><div>Раскройте скобки и соберите <var>x</var> слева.</div></details>
+<details class="full"><summary>Решение</summary><div>5<var>x</var> &minus; 10 = 3<var>x</var> + 8, значит 2<var>x</var> = 18, <var>x</var> = <b>9</b>.</div></details></li><li><div class="q">Сумма двух чисел 40, одно на 6 больше другого. Найдите их произведение.</div>
+<details class="hint"><summary>Подсказка</summary><div>Числа: <var>x</var> и <var>x</var> + 6.</div></details>
+<details class="full"><summary>Решение</summary><div>2<var>x</var> + 6 = 40, <var>x</var> = 17: числа 17 и 23, произведение <b>391</b>.</div></details></li><li><div class="q">Мастер красит забор за 4 часа, ученик &mdash; за 12. За сколько часов они покрасят его вместе?</div>
+<details class="hint"><summary>Подсказка</summary><div>Сложите производительности: 1/4 + 1/12.</div></details>
+<details class="full"><summary>Решение</summary><div>1/4 + 1/12 = 1/3 забора в час, значит <b>3 часа</b>.</div></details></li><li><div class="q">Смешали 2 литра 30-процентного раствора и 4 литра 15-процентного. Какова концентрация смеси?</div>
+<details class="hint"><summary>Подсказка</summary><div>Чистое вещество: 0,6 + 0,6 литра.</div></details>
+<details class="full"><summary>Решение</summary><div>1,2 л вещества на 6 л: <b>20&nbsp;%</b>.</div></details></li><li><div class="q">В арифметической прогрессии <var>a</var><sub>1</sub> = 7 и <var>d</var> = 4. Найдите <var>a</var><sub>25</sub>.</div>
+<details class="hint"><summary>Подсказка</summary><div>От первого члена до 25-го &mdash; 24 шага.</div></details>
+<details class="full"><summary>Решение</summary><div>7 + 24&nbsp;&middot;&nbsp;4 = <b>103</b>.</div></details></li><li><div class="q">Найдите сумму первых 30 нечётных чисел: 1 + 3 + 5 + &hellip; + 59.</div>
+<details class="hint"><summary>Подсказка</summary><div>Среднее первого и последнего, умноженное на количество.</div></details>
+<details class="full"><summary>Решение</summary><div>(1 + 59)/2&nbsp;&middot;&nbsp;30 = <b>900</b>. Красивый факт: сумма первых <var>n</var> нечётных всегда равна <var>n</var><sup>2</sup>.</div></details></li><li><div class="q">В геометрической прогрессии <var>b</var><sub>3</sub> = 18 и <var>b</var><sub>5</sub> = 162. Найдите <var>b</var><sub>1</sub>.</div>
+<details class="hint"><summary>Подсказка</summary><div>От 3-го до 5-го члена &mdash; два умножения на <var>r</var>.</div></details>
+<details class="full"><summary>Решение</summary><div><var>r</var><sup>2</sup> = 162/18 = 9. Тогда <var>b</var><sub>1</sub> = 18/<var>r</var><sup>2</sup> = <b>2</b> (знак <var>r</var> не важен: делим на <var>r</var><sup>2</sup>).</div></details></li><li><div class="q">Вася решает 2 задачи в минуту, Петя &mdash; 3. Петя начал на 5 минут позже Васи. Через сколько минут после старта Васи у них будет поровну решённых задач?</div>
+<details class="hint"><summary>Подсказка</summary><div>Если после старта Васи прошло <var>t</var> минут, сколько минут работал каждый?</div></details>
+<details class="full"><summary>Решение</summary><div>Вася работал <var>t</var> минут, Петя <var>t</var> &minus; 5: уравнение 2<var>t</var> = 3(<var>t</var> &minus; 5), откуда <var>t</var> = <b>15 минут</b>. Проверка: у обоих по 30 задач.</div></details></li></ol>
+<h3>&#9733; Задача со звёздочкой (уровень AMC №11&ndash;15)</h3>
+<ol class="selfp" style="counter-reset: sp 8"><li><div class="q">Сумма первых <var>n</var> членов последовательности равна <var>S</var><sub><var>n</var></sub> = 3<var>n</var><sup>2</sup> + 2<var>n</var>. Найдите десятый член.</div>
+<details class="hint"><summary>Подсказка</summary><div>Десятый член = <var>S</var><sub>10</sub> &minus; <var>S</var><sub>9</sub>.</div></details>
+<details class="full"><summary>Решение</summary><div><var>S</var><sub>10</sub> = 320, <var>S</var><sub>9</sub> = 261: десятый член равен <b>59</b>. Приём работает для любой суммы: член = разность соседних сумм.</div></details></li></ol>
+<div class="parent"><h3>Разбор для родителя (15 минут)</h3>
+<p>Сверьте ответы: <b>9 · 391 · 3 ч · 20 % · 103 · 900 · 2 · 15 мин</b>. Норма &mdash; 6 из 8. Ошибки в 1&ndash;2 и 8 &mdash; &laquo;линейные уравнения&raquo;; в 3 &mdash; &laquo;работа&raquo;; в 4 &mdash; &laquo;смеси&raquo;; в 5&ndash;7 &mdash; &laquo;прогрессии&raquo;.</p></div>
+</section>
+<section class="lesson" id="u13">
+<div class="lesson-id">Крэш-курс AMC 10 &middot; Блок 1 &middot; урок 1.3</div>
+<h2>Квадратный трёхчлен: корни, Виета, вершина</h2>
+<div class="lesson-meta"><span>A: теория + разобранные, 45 мин</span><span>B: самостоятельная + разбор, 45 мин</span></div>
+<h3>Теория (15 минут)</h3>
+<div class="theory">
+<p><b>Корни.</b> Сначала пробуйте разложить: <var>x</var><sup>2</sup> &minus; 7<var>x</var> + 12 = (<var>x</var> &minus; 3)(<var>x</var> &minus; 4). Не раскладывается за десять секунд &mdash; дискриминант: <var>D</var> = <var>b</var><sup>2</sup> &minus; 4<var>ac</var>, корни (<span class="frac"><span>&minus;<var>b</var> &plusmn; &radic;<var>D</var></span><span>2<var>a</var></span></span>). <var>D</var> &gt; 0 &mdash; два корня, <var>D</var> = 0 &mdash; один (двукратный), <var>D</var> &lt; 0 &mdash; нет действительных.</p>
+<div class="frm"><b>Виета</b> для <var>x</var><sup>2</sup> + <var>px</var> + <var>q</var>: сумма корней = &minus;<var>p</var>, произведение = <var>q</var>. Олимпиадный смысл: о корнях можно узнать всё, не находя их самих.</div>
+<p><b>Симметричные выражения через Виета.</b> <var>r</var><sup>2</sup> + <var>s</var><sup>2</sup> = (<var>r</var> + <var>s</var>)<sup>2</sup> &minus; 2<var>rs</var>; <var>r</var><sup>3</sup> + <var>s</var><sup>3</sup> = (<var>r</var> + <var>s</var>)<sup>3</sup> &minus; 3<var>rs</var>(<var>r</var> + <var>s</var>); 1/<var>r</var> + 1/<var>s</var> = (<var>r</var> + <var>s</var>)/<var>rs</var>. Эти три закрывают большинство задач.</p>
+<p><b>Вершина.</b> Парабола <var>ax</var><sup>2</sup> + <var>bx</var> + <var>c</var> имеет вершину при <var>x</var> = &minus;<var>b</var>/2<var>a</var> &mdash; это точка минимума (<var>a</var> &gt; 0) или максимума (<var>a</var> &lt; 0). Задачи &laquo;найдите наименьшее значение&raquo; &mdash; это почти всегда подстановка вершины. И знак: при <var>a</var> &gt; 0 трёхчлен отрицателен строго между корнями и положителен вне их &mdash; этого достаточно для квадратных неравенств.</p></div>
+<h3>Разобранные задачи (30 минут)</h3>
+<div class="wp"><div class="wp-num">Разбор 1 · разложение</div><div>Решите уравнение <var>x</var><sup>2</sup> &minus; 7<var>x</var> + 12 = 0.</div>
+<div class="sol"><b>Решение.</b> Ищем два числа с суммой 7 и произведением 12: это 3 и 4. Корни <b>3 и 4</b>. Дискриминант тут не нужен: разложение быстрее и без арифметических ошибок.</div></div><div class="wp"><div class="wp-num">Разбор 2 · Виета</div><div>Пусть <var>r</var> и <var>s</var> &mdash; корни <var>x</var><sup>2</sup> &minus; 5<var>x</var> + 3 = 0. Чему равно <var>r</var><sup>2</sup> + <var>s</var><sup>2</sup>?</div>
+<div class="sol"><b>Решение.</b> Виета: <var>r</var> + <var>s</var> = 5, <var>rs</var> = 3. Тогда <var>r</var><sup>2</sup> + <var>s</var><sup>2</sup> = 25 &minus; 2&middot;3 = <b>19</b>. Сами корни иррациональны, и находить их &mdash; потеря двух минут.</div></div><div class="wp"><div class="wp-num">Разбор 3 · вершина</div><div>Найдите наименьшее значение выражения <var>x</var><sup>2</sup> &minus; 6<var>x</var> + 11.</div>
+<div class="sol"><b>Решение.</b> Вершина при <var>x</var> = 6/2 = 3. Значение: 9 &minus; 18 + 11 = <b>2</b>. Второй способ &mdash; выделение полного квадрата: (<var>x</var> &minus; 3)<sup>2</sup> + 2 &ge; 2, и видно, что минимум равен 2 при <var>x</var> = 3.</div></div><div class="wp"><div class="wp-num">Разбор 4 · параметр</div><div>При каких <var>k</var> уравнение <var>x</var><sup>2</sup> + <var>kx</var> + 9 = 0 имеет ровно один корень?</div>
+<div class="sol"><b>Решение.</b> Ровно один корень &hArr; <var>D</var> = 0: <var>k</var><sup>2</sup> &minus; 36 = 0, то есть <var>k</var> = <b>6 или &minus;6</b>. Классическая потеря балла &mdash; забыть отрицательное значение.</div></div>
+<h3>Самостоятельная порция (30 минут, потом разбор 15)</h3>
+<p>Подсказку открываем после честной попытки; решение &mdash; после ответа или второй попытки.</p>
+<ol class="selfp"><li><div class="q">Решите уравнение <var>x</var><sup>2</sup> = 5<var>x</var>. Укажите все корни.</div>
+<details class="hint"><summary>Подсказка</summary><div>Не делите на <var>x</var>! Перенесите и вынесите множитель.</div></details>
+<details class="full"><summary>Решение</summary><div><var>x</var>(<var>x</var> &minus; 5) = 0: корни <b>0 и 5</b>. Деление на <var>x</var> теряет корень 0.</div></details></li><li><div class="q">Найдите наибольший корень уравнения <var>x</var><sup>2</sup> &minus; 2<var>x</var> &minus; 15 = 0.</div>
+<details class="hint"><summary>Подсказка</summary><div>Два числа: произведение &minus;15, сумма 2.</div></details>
+<details class="full"><summary>Решение</summary><div>(<var>x</var> &minus; 5)(<var>x</var> + 3) = 0: корни 5 и &minus;3. Наибольший &mdash; <b>5</b>.</div></details></li><li><div class="q">Корни <var>r</var> и <var>s</var> удовлетворяют <var>r</var> + <var>s</var> = 6 и <var>rs</var> = 4. Чему равно 1/<var>r</var> + 1/<var>s</var>?</div>
+<details class="hint"><summary>Подсказка</summary><div>Приведите к общему знаменателю.</div></details>
+<details class="full"><summary>Решение</summary><div>(<var>r</var> + <var>s</var>)/<var>rs</var> = 6/4 = <b>3/2</b>.</div></details></li><li><div class="q">Пусть <var>r</var> и <var>s</var> &mdash; корни <var>x</var><sup>2</sup> &minus; 4<var>x</var> + 1 = 0. Чему равно <var>r</var><sup>3</sup> + <var>s</var><sup>3</sup>?</div>
+<details class="hint"><summary>Подсказка</summary><div>(<var>r</var> + <var>s</var>)<sup>3</sup> &minus; 3<var>rs</var>(<var>r</var> + <var>s</var>).</div></details>
+<details class="full"><summary>Решение</summary><div>64 &minus; 3&nbsp;&middot;&nbsp;1&nbsp;&middot;&nbsp;4 = <b>52</b>.</div></details></li><li><div class="q">Найдите наибольшее значение выражения &minus;<var>x</var><sup>2</sup> + 8<var>x</var> &minus; 7.</div>
+<details class="hint"><summary>Подсказка</summary><div>Ветви вниз: максимум в вершине <var>x</var> = &minus;<var>b</var>/2<var>a</var>.</div></details>
+<details class="full"><summary>Решение</summary><div>Вершина при <var>x</var> = 4: &minus;16 + 32 &minus; 7 = <b>9</b>.</div></details></li><li><div class="q">Число 2 &mdash; корень уравнения <var>x</var><sup>2</sup> &minus; 6<var>x</var> + <var>c</var> = 0. Найдите второй корень.</div>
+<details class="hint"><summary>Подсказка</summary><div>Сумма корней известна из Виета.</div></details>
+<details class="full"><summary>Решение</summary><div>Сумма корней 6, значит второй корень <b>4</b> (и заодно <var>c</var> = 8).</div></details></li><li><div class="q">Сколько целых чисел удовлетворяет неравенству <var>x</var><sup>2</sup> &minus; 5<var>x</var> + 6 &lt; 0?</div>
+<details class="hint"><summary>Подсказка</summary><div>Разложите и посмотрите, где произведение отрицательно.</div></details>
+<details class="full"><summary>Решение</summary><div>(<var>x</var> &minus; 2)(<var>x</var> &minus; 3) &lt; 0 при 2 &lt; <var>x</var> &lt; 3. Целых там <b>нет: 0</b>.</div></details></li><li><div class="q">Квадратное уравнение с целыми коэффициентами имеет корни 3 + &radic;2 и 3 &minus; &radic;2. Чему равно произведение корней?</div>
+<details class="hint"><summary>Подсказка</summary><div>(<var>a</var> + <var>b</var>)(<var>a</var> &minus; <var>b</var>) = <var>a</var><sup>2</sup> &minus; <var>b</var><sup>2</sup>.</div></details>
+<details class="full"><summary>Решение</summary><div>9 &minus; 2 = <b>7</b>. Само уравнение: <var>x</var><sup>2</sup> &minus; 6<var>x</var> + 7 = 0.</div></details></li></ol>
+<h3>&#9733; Задача со звёздочкой (уровень AMC №11&ndash;15)</h3>
+<ol class="selfp" style="counter-reset: sp 8"><li><div class="q">Пусть <var>r</var> и <var>s</var> &mdash; корни уравнения <var>x</var><sup>2</sup> &minus; 3<var>x</var> &minus; 2 = 0. Квадратное уравнение вида <var>x</var><sup>2</sup> + <var>px</var> + <var>q</var> = 0 имеет корни <var>r</var> + 1 и <var>s</var> + 1. Чему равно <var>q</var>?</div>
+<details class="hint"><summary>Подсказка</summary><div><var>q</var> &mdash; произведение новых корней; раскройте (<var>r</var> + 1)(<var>s</var> + 1).</div></details>
+<details class="full"><summary>Решение</summary><div>(<var>r</var> + 1)(<var>s</var> + 1) = <var>rs</var> + <var>r</var> + <var>s</var> + 1 = &minus;2 + 3 + 1 = <b>2</b>. Корни искать не нужно: всё даёт Виета.</div></details></li></ol>
+<div class="parent"><h3>Разбор для родителя (15 минут)</h3>
+<p>Сверьте ответы: <b>0 и 5 · 5 · 3/2 · 52 · 9 · 4 · 0 · 7</b>. Норма &mdash; 6 из 8. Ошибки в 1&ndash;2 &mdash; &laquo;корни и разложение&raquo;; в 3&ndash;4 и 6 &mdash; &laquo;Виета&raquo;; в 5 &mdash; &laquo;вершина&raquo;; в 7 &mdash; знак трёхчлена в теории; в 8 &mdash; разбор решения целиком.</p></div>
+</section>
+<section class="lesson" id="u14">
+<div class="lesson-id">Крэш-курс AMC 10 &middot; Блок 1 &middot; урок 1.4</div>
+<h2>Тождества и трюки: квадраты, кубы, телескопы</h2>
+<div class="lesson-meta"><span>A: теория + разобранные, 45 мин</span><span>B: самостоятельная + разбор, 45 мин</span></div>
+<h3>Теория (15 минут)</h3>
+<div class="theory">
+<p><b>Три тождества, которые надо узнавать в лицо.</b> (<var>a</var> &plusmn; <var>b</var>)<sup>2</sup> = <var>a</var><sup>2</sup> &plusmn; 2<var>ab</var> + <var>b</var><sup>2</sup>; разность квадратов <var>a</var><sup>2</sup> &minus; <var>b</var><sup>2</sup> = (<var>a</var> &minus; <var>b</var>)(<var>a</var> + <var>b</var>); сумма и разность кубов <var>a</var><sup>3</sup> &plusmn; <var>b</var><sup>3</sup> = (<var>a</var> &plusmn; <var>b</var>)(<var>a</var><sup>2</sup> &#8723; <var>ab</var> + <var>b</var><sup>2</sup>). Разность квадратов &mdash; главный ускоритель счёта: 101<sup>2</sup> &minus; 99<sup>2</sup> = 200&nbsp;&middot;&nbsp;2.</p>
+<div class="frm">Если <var>s</var> = <var>x</var> + 1/<var>x</var>, то <var>x</var><sup>2</sup> + 1/<var>x</var><sup>2</sup> = <var>s</var><sup>2</sup> &minus; 2, а <var>x</var><sup>3</sup> + 1/<var>x</var><sup>3</sup> = <var>s</var><sup>3</sup> &minus; 3<var>s</var>. Возводите известное в степень и вычитайте лишнее.</div>
+<p><b>Телескопирование.</b> Длинная сумма или произведение, где соседние члены гасят друг друга: <span style="white-space:nowrap"><span class="frac"><span>1</span><span><var>k</var>(<var>k</var>+1)</span></span> = <span class="frac"><span>1</span><span><var>k</var></span></span> &minus; <span class="frac"><span>1</span><span><var>k</var>+1</span></span></span> &mdash; всё внутри сокращается, остаются первый и последний. Увидели сумму из ста дробей &mdash; ищите телескоп.</p>
+<p><b>Группировка.</b> <var>ab</var> + <var>a</var> + <var>b</var> + 1 = (<var>a</var> + 1)(<var>b</var> + 1). Добавить единицу и разложить &mdash; стандартный ход в задачах про целые числа.</p></div>
+<h3>Разобранные задачи (30 минут)</h3>
+<div class="wp"><div class="wp-num">Разбор 1 · разность квадратов</div><div>Вычислите 101<sup>2</sup> &minus; 99<sup>2</sup> без столбика.</div>
+<div class="sol"><b>Решение.</b> (101 &minus; 99)(101 + 99) = 2&nbsp;&middot;&nbsp;200 = <b>400</b>. На AMC такие вычисления встроены в большие задачи: узнавать разность квадратов надо мгновенно.</div></div><div class="wp"><div class="wp-num">Разбор 2 · x + 1/x</div><div>Известно, что <var>x</var> + 1/<var>x</var> = 3. Найдите <var>x</var><sup>2</sup> + 1/<var>x</var><sup>2</sup> и <var>x</var><sup>4</sup> + 1/<var>x</var><sup>4</sup>.</div>
+<div class="sol"><b>Решение.</b> Квадрат: 9 = <var>x</var><sup>2</sup> + 2 + 1/<var>x</var><sup>2</sup>, значит <var>x</var><sup>2</sup> + 1/<var>x</var><sup>2</sup> = <b>7</b>. Ещё раз тот же ход: 49 = <var>x</var><sup>4</sup> + 2 + 1/<var>x</var><sup>4</sup>, значит <b>47</b>. Каждое возведение в квадрат приносит лишнюю двойку &mdash; её и вычитаем.</div></div><div class="wp"><div class="wp-num">Разбор 3 · телескоп</div><div>Вычислите сумму <span class="frac"><span>1</span><span>1&middot;2</span></span> + <span class="frac"><span>1</span><span>2&middot;3</span></span> + &hellip; + <span class="frac"><span>1</span><span>99&middot;100</span></span>.</div>
+<div class="sol"><b>Решение.</b> Каждое слагаемое: <span class="frac"><span>1</span><span><var>k</var>(<var>k</var>+1)</span></span> = <span class="frac"><span>1</span><span><var>k</var></span></span> &minus; <span class="frac"><span>1</span><span><var>k</var>+1</span></span>. Сумма схлопывается: 1 &minus; 1/100 = <b>99/100</b>.</div></div><div class="wp"><div class="wp-num">Разбор 4 · группировка</div><div>Натуральные <var>a</var> и <var>b</var> таковы, что <var>ab</var> + <var>a</var> + <var>b</var> = 63. Каково наименьшее возможное значение <var>a</var> + <var>b</var>?</div>
+<div class="sol"><b>Решение.</b> Добавим 1: (<var>a</var> + 1)(<var>b</var> + 1) = 64. Разложения 64 на два множителя &ge; 2: 2&middot;32, 4&middot;16, 8&middot;8. Суммы <var>a</var> + <var>b</var>: 32, 18, 14. Наименьшая &mdash; <b>14</b> (при <var>a</var> = <var>b</var> = 7): произведение фиксировано, сумма минимальна у самых близких множителей.</div></div>
+<h3>Самостоятельная порция (30 минут, потом разбор 15)</h3>
+<p>Подсказку открываем после честной попытки; решение &mdash; после ответа или второй попытки.</p>
+<ol class="selfp"><li><div class="q">Вычислите 51<sup>2</sup> &minus; 49<sup>2</sup>.</div>
+<details class="hint"><summary>Подсказка</summary><div>Разность квадратов.</div></details>
+<details class="full"><summary>Решение</summary><div>2&nbsp;&middot;&nbsp;100 = <b>200</b>.</div></details></li><li><div class="q">Вычислите (&radic;7 + &radic;3)(&radic;7 &minus; &radic;3).</div>
+<details class="hint"><summary>Подсказка</summary><div>Та же разность квадратов.</div></details>
+<details class="full"><summary>Решение</summary><div>7 &minus; 3 = <b>4</b>.</div></details></li><li><div class="q">Известно, что <var>x</var> + 1/<var>x</var> = 6. Найдите <var>x</var><sup>3</sup> + 1/<var>x</var><sup>3</sup>.</div>
+<details class="hint"><summary>Подсказка</summary><div><var>s</var><sup>3</sup> &minus; 3<var>s</var>.</div></details>
+<details class="full"><summary>Решение</summary><div>216 &minus; 18 = <b>198</b>.</div></details></li><li><div class="q">Вычислите 999&nbsp;&middot;&nbsp;1001 без столбика.</div>
+<details class="hint"><summary>Подсказка</summary><div>(1000 &minus; 1)(1000 + 1).</div></details>
+<details class="full"><summary>Решение</summary><div>10<sup>6</sup> &minus; 1 = <b>999&nbsp;999</b>.</div></details></li><li><div class="q">Вычислите произведение (1 &minus; <span class="frac"><span>1</span><span>2</span></span>)(1 &minus; <span class="frac"><span>1</span><span>3</span></span>)&hellip;(1 &minus; <span class="frac"><span>1</span><span>100</span></span>).</div>
+<details class="hint"><summary>Подсказка</summary><div>Запишите каждый множитель дробью и посмотрите, что сокращается.</div></details>
+<details class="full"><summary>Решение</summary><div><span class="frac"><span>1</span><span>2</span></span>&middot;<span class="frac"><span>2</span><span>3</span></span>&middot;&hellip;&middot;<span class="frac"><span>99</span><span>100</span></span>: всё сокращается до <b>1/100</b>.</div></details></li><li><div class="q">Числа <var>a</var> и <var>b</var> таковы, что <var>a</var> + <var>b</var> = 7 и <var>ab</var> = 10. Найдите <var>a</var><sup>3</sup> + <var>b</var><sup>3</sup>.</div>
+<details class="hint"><summary>Подсказка</summary><div>(<var>a</var> + <var>b</var>)<sup>3</sup> &minus; 3<var>ab</var>(<var>a</var> + <var>b</var>).</div></details>
+<details class="full"><summary>Решение</summary><div>343 &minus; 210 = <b>133</b>.</div></details></li><li><div class="q">Вычислите сумму <span class="frac"><span>1</span><span>&radic;2 + 1</span></span> + <span class="frac"><span>1</span><span>&radic;3 + &radic;2</span></span> + &hellip; + <span class="frac"><span>1</span><span>&radic;25 + &radic;24</span></span>.</div>
+<details class="hint"><summary>Подсказка</summary><div>Домножьте каждую дробь на сопряжённое: знаменатель станет единицей.</div></details>
+<details class="full"><summary>Решение</summary><div>Каждое слагаемое равно &radic;(<var>k</var>+1) &minus; &radic;<var>k</var>; телескоп даёт &radic;25 &minus; 1 = <b>4</b>.</div></details></li><li><div class="q">Вычислите <span class="frac"><span>2<sup>10</sup> &minus; 1</span><span>2<sup>5</sup> &minus; 1</span></span>.</div>
+<details class="hint"><summary>Подсказка</summary><div>Разность квадратов: 2<sup>10</sup> = (2<sup>5</sup>)<sup>2</sup>.</div></details>
+<details class="full"><summary>Решение</summary><div>(2<sup>5</sup> &minus; 1)(2<sup>5</sup> + 1)/(2<sup>5</sup> &minus; 1) = 2<sup>5</sup> + 1 = <b>33</b>.</div></details></li></ol>
+<h3>&#9733; Задача со звёздочкой (уровень AMC №11&ndash;15)</h3>
+<ol class="selfp" style="counter-reset: sp 8"><li><div class="q">Вычислите (2 + 1)(2<sup>2</sup> + 1)(2<sup>4</sup> + 1)(2<sup>8</sup> + 1) + 1.</div>
+<details class="hint"><summary>Подсказка</summary><div>Домножьте произведение на (2 &minus; 1) &mdash; оно не изменится, а разности квадратов начнут схлопываться.</div></details>
+<details class="full"><summary>Решение</summary><div>(2&minus;1)(2+1)(2<sup>2</sup>+1)(2<sup>4</sup>+1)(2<sup>8</sup>+1) = 2<sup>16</sup> &minus; 1, значит выражение равно 2<sup>16</sup> = <b>65&nbsp;536</b>.</div></details></li></ol>
+<div class="parent"><h3>Разбор для родителя (15 минут)</h3>
+<p>Сверьте ответы: <b>200 · 4 · 198 · 999 999 · 1/100 · 133 · 4 · 33</b>. Норма &mdash; 6 из 8. Ошибки в 1&ndash;2 и 4, 8 &mdash; &laquo;три тождества&raquo;; в 3 и 6 &mdash; формулы кубов через сумму; в 5 и 7 &mdash; &laquo;телескопирование&raquo;.</p></div>
+</section>
+<section class="lesson" id="u15">
+<div class="lesson-id">Крэш-курс AMC 10 &middot; Блок 1 &middot; урок 1.5</div>
+<h2>Модуль: уравнения, неравенства, расстояния</h2>
+<div class="lesson-meta"><span>A: теория + разобранные, 45 мин</span><span>B: самостоятельная + разбор, 45 мин</span></div>
+<h3>Теория (15 минут)</h3>
+<div class="theory">
+<p><b>Модуль &mdash; это расстояние.</b> |<var>x</var>| &mdash; расстояние от <var>x</var> до нуля; |<var>x</var> &minus; <var>a</var>| &mdash; расстояние от <var>x</var> до точки <var>a</var>. Половина задач с модулем решается картинкой на числовой прямой быстрее, чем разбором случаев.</p>
+<div class="frm">|<var>f</var>| = <var>c</var> (при <var>c</var> &gt; 0) &hArr; <var>f</var> = <var>c</var> или <var>f</var> = &minus;<var>c</var>. &nbsp;При <var>a</var> &gt; 0: |<var>x</var>| &lt; <var>a</var> &hArr; &minus;<var>a</var> &lt; <var>x</var> &lt; <var>a</var>; &nbsp;|<var>x</var>| &gt; <var>a</var> &hArr; <var>x</var> &lt; &minus;<var>a</var> или <var>x</var> &gt; <var>a</var>.</div>
+<p><b>Сумма расстояний.</b> |<var>x</var> &minus; <var>a</var>| + |<var>x</var> &minus; <var>b</var>| &mdash; это суммарное расстояние от <var>x</var> до двух точек. Между точками она постоянна и равна |<var>a</var> &minus; <var>b</var>|; вне &mdash; растёт. Для нечётного числа точек минимум суммы расстояний достигается в средней (медианной) точке.</p>
+<p><b>Вложенные модули.</b> ||<var>x</var>| &minus; 4| = 2 раскрывается послойно, снаружи внутрь: сначала |<var>x</var>| &minus; 4 = &plusmn;2, потом каждый случай отдельно. Аккуратность важнее скорости: считайте корни в конце.</p></div>
+<h3>Разобранные задачи (30 минут)</h3>
+<div class="wp"><div class="wp-num">Разбор 1 · уравнение</div><div>Решите уравнение |2<var>x</var> &minus; 3| = 7.</div>
+<div class="sol"><b>Решение.</b> 2<var>x</var> &minus; 3 = 7 или 2<var>x</var> &minus; 3 = &minus;7: корни <b>5 и &minus;2</b>. Проверка подстановкой: |7| = 7, |&minus;7| = 7. Верно.</div></div><div class="wp"><div class="wp-num">Разбор 2 · сумма расстояний</div><div>Каково наименьшее значение выражения |<var>x</var> &minus; 1| + |<var>x</var> &minus; 5|, и при каких <var>x</var> оно достигается?</div>
+<div class="sol"><b>Решение.</b> Это сумма расстояний от <var>x</var> до точек 1 и 5. Между ними она постоянна и равна расстоянию между точками: <b>4</b>, при любом <var>x</var> из отрезка [1;&nbsp;5]. Никакого разбора случаев: одна картинка.</div></div><div class="wp"><div class="wp-num">Разбор 3 · неравенство</div><div>Сколько целых чисел удовлетворяет неравенству |<var>x</var> &minus; 2| &lt; 3?</div>
+<div class="sol"><b>Решение.</b> &minus;3 &lt; <var>x</var> &minus; 2 &lt; 3, то есть &minus;1 &lt; <var>x</var> &lt; 5. Целые: 0, 1, 2, 3, 4 &mdash; <b>пять</b>. Частая ошибка &mdash; посчитать концы: при строгом неравенстве &minus;1 и 5 не входят.</div></div><div class="wp"><div class="wp-num">Разбор 4 · вложенные модули</div><div>Сколько корней у уравнения ||<var>x</var>| &minus; 4| = 2?</div>
+<div class="sol"><b>Решение.</b> Слой первый: |<var>x</var>| &minus; 4 = 2 или &minus;2, то есть |<var>x</var>| = 6 или |<var>x</var>| = 2. Слой второй: <var>x</var> = &plusmn;6 и <var>x</var> = &plusmn;2. Итого <b>4 корня</b>.</div></div>
+<h3>Самостоятельная порция (30 минут, потом разбор 15)</h3>
+<p>Подсказку открываем после честной попытки; решение &mdash; после ответа или второй попытки.</p>
+<ol class="selfp"><li><div class="q">Решите уравнение |<var>x</var> + 4| = 9 и найдите сумму корней.</div>
+<details class="hint"><summary>Подсказка</summary><div>Два случая: <var>x</var> + 4 = &plusmn;9.</div></details>
+<details class="full"><summary>Решение</summary><div>Корни 5 и &minus;13: они симметричны относительно точки &minus;4, поэтому сумма равна <b>&minus;8</b>.</div></details></li><li><div class="q">Сколько корней у уравнения |3<var>x</var> &minus; 6| = 0?</div>
+<details class="hint"><summary>Подсказка</summary><div>Модуль равен нулю только в одной ситуации.</div></details>
+<details class="full"><summary>Решение</summary><div>Только 3<var>x</var> &minus; 6 = 0: <b>один корень</b>, <var>x</var> = 2.</div></details></li><li><div class="q">Сколько целых чисел удовлетворяет неравенству |<var>x</var> &minus; 3| &le; 5?</div>
+<details class="hint"><summary>Подсказка</summary><div>Отрезок от &minus;2 до 8, концы входят.</div></details>
+<details class="full"><summary>Решение</summary><div>От &minus;2 до 8 включительно: <b>11 чисел</b>.</div></details></li><li><div class="q">Сколько целых решений у уравнения |<var>x</var> + 2| + |<var>x</var> &minus; 4| = 6?</div>
+<details class="hint"><summary>Подсказка</summary><div>Сравните 6 с расстоянием между точками &minus;2 и 4.</div></details>
+<details class="full"><summary>Решение</summary><div>Расстояние между &minus;2 и 4 равно 6, значит равенство выполняется на всём отрезке [&minus;2;&nbsp;4]. Целых решений <b>7</b>.</div></details></li><li><div class="q">Решите уравнение |<var>x</var> &minus; 1| = |<var>x</var> &minus; 7|.</div>
+<details class="hint"><summary>Подсказка</summary><div>Точка, равноудалённая от 1 и 7.</div></details>
+<details class="full"><summary>Решение</summary><div>Середина: <var>x</var> = <b>4</b>.</div></details></li><li><div class="q">Каково наименьшее значение выражения |<var>x</var> &minus; 2| + |<var>x</var> &minus; 6| + |<var>x</var> &minus; 9|?</div>
+<details class="hint"><summary>Подсказка</summary><div>Три точки: минимум в средней.</div></details>
+<details class="full"><summary>Решение</summary><div>При <var>x</var> = 6: 4 + 0 + 3 = <b>7</b>.</div></details></li><li><div class="q">Найдите наименьшее натуральное решение неравенства |5 &minus; 2<var>x</var>| &gt; 3.</div>
+<details class="hint"><summary>Подсказка</summary><div>&laquo;Модуль больше 3&raquo; значит: выражение под модулем больше 3 или меньше &minus;3.</div></details>
+<details class="full"><summary>Решение</summary><div>Натуральные из <var>x</var> &gt; 4 начинаются с <b>5</b> (числа 1&ndash;4 не подходят: подставьте и проверьте).</div></details></li><li><div class="q">Сколько корней у уравнения ||<var>x</var> &minus; 1| &minus; 3| = 2?</div>
+<details class="hint"><summary>Подсказка</summary><div>Раскрывайте снаружи внутрь, слой за слоем.</div></details>
+<details class="full"><summary>Решение</summary><div>|<var>x</var> &minus; 1| = 5 даёт 6 и &minus;4; |<var>x</var> &minus; 1| = 1 даёт 2 и 0. Всего <b>4 корня</b>.</div></details></li></ol>
+<h3>&#9733; Задача со звёздочкой (уровень AMC №11&ndash;15)</h3>
+<ol class="selfp" style="counter-reset: sp 8"><li><div class="q">Сколько решений у уравнения |<var>x</var> &minus; 1| + |<var>x</var> &minus; 3| = <var>x</var>?</div>
+<details class="hint"><summary>Подсказка</summary><div>Три промежутка: <var>x</var> &lt; 1, от 1 до 3, <var>x</var> &gt; 3. На каждом раскройте модули и проверьте, попал ли корень в промежуток.</div></details>
+<details class="full"><summary>Решение</summary><div>При <var>x</var> &lt; 1: 4 &minus; 2<var>x</var> = <var>x</var>, <var>x</var> = 4/3 &mdash; не в промежутке. При 1 &le; <var>x</var> &le; 3: 2 = <var>x</var> &mdash; подходит. При <var>x</var> &gt; 3: 2<var>x</var> &minus; 4 = <var>x</var>, <var>x</var> = 4 &mdash; подходит. Итого <b>2 решения</b> (2 и 4).</div></details></li></ol>
+<div class="parent"><h3>Разбор для родителя (15 минут)</h3>
+<p>Сверьте ответы: <b>−8 · 1 корень · 11 · 7 · 4 · 7 · 5 · 4 корня</b>. Норма &mdash; 6 из 8. Ошибки в 1&ndash;2 &mdash; &laquo;модуль как два случая&raquo;; в 3 и 7 &mdash; неравенства и концы; в 4&ndash;6 &mdash; &laquo;расстояния на прямой&raquo;; в 8 &mdash; &laquo;вложенные модули&raquo;.</p></div>
+</section>
+<section class="lesson" id="t1">
+<div class="lesson-id">Крэш-курс AMC 10 &middot; Блок 1 &middot; Тест Т1 по блоку</div>
+<h2>Тест Т1 по блоку</h2>
+<div class="lesson-meta"><span>10 задач &middot; 30 минут &middot; порог усвоения 7 из 10 &middot; без калькулятора</span></div>
+<p>Тест закрывает блок: проценты и отношения, уравнения, работа и смеси, прогрессии, Виета и вершина, тождества, модуль. Ниже порога &mdash; один добор-урок по проваленным подтемам (маршрутизация в разборе), не &laquo;всё заново&raquo;.</p>
+<ol class="tprob"><li><div class="q">Цену дважды повышали на 20&nbsp;%, после чего она стала 144 доллара. Какой была исходная цена (в долларах)?</div><div class="opts"><div class="opt"><b>A</b>96</div><div class="opt"><b>B</b>100</div><div class="opt"><b>C</b>104</div><div class="opt"><b>D</b>110</div><div class="opt"><b>E</b>120</div></div></li><li><div class="q">Числа <var>a</var> и <var>b</var> относятся как 3&nbsp;:&nbsp;5, и <var>a</var> + <var>b</var> = 64. Чему равно <var>b</var> &minus; <var>a</var>?</div><div class="opts"><div class="opt"><b>A</b>8</div><div class="opt"><b>B</b>12</div><div class="opt"><b>C</b>16</div><div class="opt"><b>D</b>24</div><div class="opt"><b>E</b>40</div></div></li><li><div class="q">Половину пути велосипедист ехал со скоростью 20 км/ч, другую половину &mdash; 30 км/ч. Какова его средняя скорость (км/ч)?</div><div class="opts"><div class="opt"><b>A</b>24</div><div class="opt"><b>B</b>25</div><div class="opt"><b>C</b>26</div><div class="opt"><b>D</b>27</div><div class="opt"><b>E</b>28</div></div></li><li><div class="q">Числа <var>x</var> и <var>y</var> таковы, что <var>x</var> + <var>y</var> = 10 и <var>x</var><sup>2</sup> &minus; <var>y</var><sup>2</sup> = 40. Чему равно <var>x</var>?</div><div class="opts"><div class="opt"><b>A</b>4</div><div class="opt"><b>B</b>5</div><div class="opt"><b>C</b>6</div><div class="opt"><b>D</b>7</div><div class="opt"><b>E</b>8</div></div></li><li><div class="q">Одна труба наполняет бак за 2 часа, другая &mdash; за 3. За сколько часов они наполнят бак вместе?</div><div class="opts"><div class="opt"><b>A</b>1</div><div class="opt"><b>B</b>1,2</div><div class="opt"><b>C</b>1,5</div><div class="opt"><b>D</b>2,5</div><div class="opt"><b>E</b>5</div></div></li><li><div class="q">Пусть <var>r</var> и <var>s</var> &mdash; корни уравнения <var>x</var><sup>2</sup> &minus; 9<var>x</var> + 14 = 0. Чему равно <var>r</var><sup>2</sup> + <var>s</var><sup>2</sup>?</div><div class="opts"><div class="opt"><b>A</b>25</div><div class="opt"><b>B</b>39</div><div class="opt"><b>C</b>45</div><div class="opt"><b>D</b>49</div><div class="opt"><b>E</b>53</div></div></li><li><div class="q">Каково наименьшее значение выражения <var>x</var><sup>2</sup> &minus; 8<var>x</var> + 3?</div><div class="opts"><div class="opt"><b>A</b>&minus;16</div><div class="opt"><b>B</b>&minus;13</div><div class="opt"><b>C</b>&minus;8</div><div class="opt"><b>D</b>3</div><div class="opt"><b>E</b>13</div></div></li><li><div class="q">Действительное число <var>x</var> удовлетворяет равенству <var>x</var> + 1/<var>x</var> = 6. Чему равно <var>x</var><sup>2</sup> + 1/<var>x</var><sup>2</sup>?</div><div class="opts"><div class="opt"><b>A</b>30</div><div class="opt"><b>B</b>32</div><div class="opt"><b>C</b>34</div><div class="opt"><b>D</b>36</div><div class="opt"><b>E</b>38</div></div></li><li><div class="q">Чему равна сумма <span class="frac"><span>1</span><span>1&middot;2</span></span> + <span class="frac"><span>1</span><span>2&middot;3</span></span> + &hellip; + <span class="frac"><span>1</span><span>19&middot;20</span></span>?</div><div class="opts"><div class="opt"><b>A</b><span class="frac"><span>9</span><span>10</span></span></div><div class="opt"><b>B</b><span class="frac"><span>18</span><span>19</span></span></div><div class="opt"><b>C</b><span class="frac"><span>19</span><span>20</span></span></div><div class="opt"><b>D</b>1</div><div class="opt"><b>E</b><span class="frac"><span>20</span><span>19</span></span></div></div></li><li><div class="q">Чему равна сумма корней уравнения |2<var>x</var> &minus; 5| = 9?</div><div class="opts"><div class="opt"><b>A</b>&minus;14</div><div class="opt"><b>B</b>&minus;5</div><div class="opt"><b>C</b>2</div><div class="opt"><b>D</b>5</div><div class="opt"><b>E</b>14</div></div></li></ol>
+<details class="answers"><summary>Показать ключ и разбор</summary><div class="answers-body">
+<div class="key"><div><span>1</span> <b>B</b></div><div><span>2</span> <b>C</b></div><div><span>3</span> <b>A</b></div><div><span>4</span> <b>D</b></div><div><span>5</span> <b>B</b></div><div><span>6</span> <b>E</b></div><div><span>7</span> <b>B</b></div><div><span>8</span> <b>C</b></div><div><span>9</span> <b>C</b></div><div><span>10</span> <b>D</b></div></div>
+<p style="font-size:.85rem;color:var(--mist);margin-bottom:1rem">Для родителя: ключ и однострочные разборы. Провалы соотнесите с уроками: 1&ndash;3 &rarr; 1.1&ndash;1.2, 4 и 6&ndash;8 &rarr; 1.3&ndash;1.4, 5 &rarr; 1.2, 9 &rarr; 1.4, 10 &rarr; 1.5.</p>
+<div class="hints"><p><b>1.</b> 144 = <var>x</var>&nbsp;&middot;&nbsp;1,2&nbsp;&middot;&nbsp;1,2, значит <var>x</var> = 144/1,44 = 100.</p><p><b>2.</b> Часть <var>k</var> = 64/8 = 8: числа 24 и 40, разность 16.</p><p><b>3.</b> 2&middot;20&middot;30/(20+30) = 24. Не 25: на медленной половине уходит больше времени.</p><p><b>4.</b> <var>x</var><sup>2</sup> &minus; <var>y</var><sup>2</sup> = (<var>x</var>+<var>y</var>)(<var>x</var>&minus;<var>y</var>) = 40, значит <var>x</var> &minus; <var>y</var> = 4 и <var>x</var> = 7.</p><p><b>5.</b> 1/2 + 1/3 = 5/6 бака в час: 6/5 = 1,2 часа.</p><p><b>6.</b> Виета: 81 &minus; 2&middot;14 = 53.</p><p><b>7.</b> Вершина при <var>x</var> = 4: 16 &minus; 32 + 3 = &minus;13.</p><p><b>8.</b> 36 &minus; 2 = 34.</p><p><b>9.</b> Телескоп: 1 &minus; 1/20 = 19/20.</p><p><b>10.</b> Корни 7 и &minus;2, сумма 5.</p></div></div></details>
+<div class="pdfline"><strong>Для печати:</strong> <a href="algebra-lessons-ru.pdf">уроки блока 1 (PDF)</a> &middot; <a href="algebra-test-ru.pdf">тест Т1 (PDF)</a></div>
+</section>
+<footer>Задачи курса составлены оригинально и не воспроизводят задания официальных олимпиад AMC. <a href="index.html">Оглавление курса</a> &middot; <a href="../index.html">справка об AMC 10 и пробный тест</a> &middot; <a href="index.html#svyaz">оставить комментарий</a>.</footer>
+</main>
 </div>
-
-<section>
-  <h2>Что это за олимпиада</h2>
-  <p>AMC&nbsp;10 (American Mathematics Competition) &mdash; общенациональная олимпиада по математике для школьников США, которую проводит Математическая ассоциация Америки. Это первая ступень цепочки, ведущей к AIME, USA(J)MO и далее к отбору в национальную сборную.</p>
-
-  <div class="spec">
-    <div class="spec-row"><div class="spec-key">Объём</div><div class="spec-val">25 задач за 75 минут, каждая с выбором одного ответа из пяти (A&ndash;E)</div></div>
-    <div class="spec-row"><div class="spec-key">Сложность</div><div class="spec-val">Задачи упорядочены по возрастанию: №&nbsp;1&ndash;10 доступны большинству участников, №&nbsp;11&ndash;20 требуют уверенной техники, №&nbsp;21&ndash;25 &mdash; олимпиадные, их полностью решают немногие</div></div>
-    <div class="spec-row"><div class="spec-key">Кто участвует</div><div class="spec-val">Ученики 10 класса и младше, которым на день олимпиады меньше 17,5 лет</div></div>
-    <div class="spec-row"><div class="spec-key">Калькулятор</div><div class="spec-val">Запрещён, как и телефоны, умные часы и любые вычислительные устройства. Официальная формулировка MAA: ни одна задача не требует калькулятора. Разрешены черновики, линейка и циркуль</div></div>
-    <div class="spec-row"><div class="spec-key">Когда</div><div class="spec-val">Две независимые версии с интервалом около недели. В 2026 году: <strong>AMC&nbsp;10A &mdash; четверг 5&nbsp;ноября</strong>, <strong>AMC&nbsp;10B &mdash; пятница 13&nbsp;ноября</strong>. Школа может проводить одну из них или обе. <em>Регистрация идёт через школу или официальный центр проведения и закрывается заранее; вариант из дома онлайн больше не поддерживается.</em></div></div>
-    <div class="spec-row"><div class="spec-key">Что дальше</div><div class="spec-val">Приглашение на AIME получают примерно верхние 2,5&nbsp;% участников. Порог не фиксирован: он свой для версий A и B и зависит от сложности года. В цикле 2025&ndash;26 это 105 баллов (10A) и 99 баллов (10B); исторический диапазон &mdash; приблизительно 90&ndash;120</div></div>
-  </div>
-</section>
-
-<section>
-  <h2>Система баллов</h2>
-  <div class="scoring">
-    <div class="score-card"><div class="score-num">6</div><div class="score-lbl">за правильный ответ</div></div>
-    <div class="score-card"><div class="score-num">1,5</div><div class="score-lbl">за пропущенную задачу</div></div>
-    <div class="score-card"><div class="score-num">0</div><div class="score-lbl">за неправильный ответ</div></div>
-  </div>
-  <p>Максимум &mdash; 150 баллов. Отсюда следует важная стратегия, которую стоит обсудить с учеником заранее: угадывать вслепую невыгодно, потому что ожидаемая выгода составляет 6&nbsp;&middot;&nbsp;&#8533;&nbsp;=&nbsp;1,2 балла против 1,5 балла за честный пропуск. Но если удалось исключить хотя бы один вариант из пяти, угадывать уже стоит.</p>
-</section>
-
-<section>
-  <h2>Что проверяет экзамен</h2>
-  <div class="topics">
-    <div class="yes">
-      <h3>Входит</h3>
-      <ul class="topic-list">
-        <li>Элементарная алгебра: уравнения и неравенства, квадратный трёхчлен, функции, прогрессии</li>
-        <li>Геометрия: подобие, многоугольники, окружности, площади и объёмы, координатная геометрия</li>
-        <li>Элементарная теория чисел: делимость, арифметика остатков, простые числа</li>
-        <li>Комбинаторика и вероятность</li>
-      </ul>
-    </div>
-    <div class="no">
-      <h3>Не входит</h3>
-      <ul class="topic-list">
-        <li>Тригонометрия</li>
-        <li>Логарифмы</li>
-        <li>Продвинутая алгебра</li>
-        <li>Математический анализ</li>
-      </ul>
-    </div>
-  </div>
-  <p>Последнее особенно важно для тех, кто идёт по программе Precalculus: тригонометрия и логарифмы появляются только в AMC&nbsp;12, поэтому значительная часть текущего школьного курса к ноябрьской олимпиаде прямо не готовит. Готовиться нужно к другому: к комбинаторике, теории чисел и олимпиадной геометрии, которых в обычной школьной программе почти нет. И ещё одна особенность: почти все задачи решаются без громоздких вычислений, ценится идея и приём, а не техника счёта.</p>
-</section>
-
-<section>
-  <h2>Чем отличается AMC&nbsp;10A от AMC&nbsp;10B</h2>
-
-  <div class="scoring" style="grid-template-columns:1fr 1fr">
-    <div class="score-card"><div class="score-num">10A</div><div class="score-lbl">четверг, 5 ноября 2026</div></div>
-    <div class="score-card"><div class="score-num">10B</div><div class="score-lbl">пятница, 13 ноября 2026</div></div>
-  </div>
-
-  <p>Ничем принципиальным &mdash; это две независимые даты проведения одной и той же олимпиады, а не два уровня сложности.</p>
-
-  <p>Разница только в следующем. Версии проходят в разные дни, с недельным интервалом в ноябре, и задачи в них полностью разные &mdash; иначе те, кто пишет позже, знали бы условия заранее. Существуют они ради расписания: школа может выбрать удобную дату, а ученик &mdash; не пропустить олимпиаду из-за болезни или накладки с другим мероприятием.</p>
-
-  <p>Формат, программа, система баллов и статус абсолютно одинаковы. Обе версии равноценны для выхода на AIME, и ни одна не считается &laquo;престижнее&raquo; другой.</p>
-
-  <p>Составители целятся в одинаковую сложность, но на практике попасть в неё точь-в-точь не удаётся, поэтому порог выхода на AIME считается для A и B отдельно. В цикле 2025&ndash;26 это было 105 баллов для 10A и 99 для 10B &mdash; то есть вариант B в тот год оказался чуть труднее, и планку опустили. Предсказать заранее, какая версия будет проще, невозможно, так что выбирать дату из тактических соображений бессмысленно.</p>
-
-  <p>Практически полезная деталь: писать можно обе версии, и это довольно распространённая стратегия. Регистрация на них раздельная (и обычно платная за каждую), но два захода дают две попытки квалифицироваться &mdash; засчитывается лучший результат, достаточно пройти порог хотя бы в одной. Для первого года участия это разумно: первая олимпиада уходит на то, чтобы привыкнуть к формату и научиться распределять 75 минут, а вторая уже показывает реальный уровень.</p>
-
-  <p>Ещё одно правило, которое иногда пригождается: в один день нельзя писать и AMC&nbsp;10, и AMC&nbsp;12, но можно взять разные уровни на разные даты &mdash; например, AMC&nbsp;10A в первую дату и AMC&nbsp;12B во вторую. Для тех, кто перерос десятку, этот вариант становится актуальным.</p>
-
-  <p>Если решите писать обе, уточните у школы заранее, регистрирует ли она вообще версию B &mdash; многие школы проводят только одну из дат, и тогда вторую приходится искать в другом центре проведения.</p>
-</section>
-
-<section>
-  <h2>Пробный тест в стиле AMC 10</h2>
-  <div class="test-head">
-    <span>25 задач</span><span>75 минут</span><span>без калькулятора</span><span>ответы в конце</span>
-  </div>
-
-  <ol class="problems">
-
-    <li><div class="q">Чему равно значение дроби <span class="frac"><span>2 + 4 + 6 + &hellip; + 20</span><span>1 + 3 + 5 + &hellip; + 19</span></span>?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b><span class="frac"><span>9</span><span>10</span></span></div>
-        <div class="opt"><b>B</b>1</div>
-        <div class="opt"><b>C</b><span class="frac"><span>11</span><span>10</span></span></div>
-        <div class="opt"><b>D</b><span class="frac"><span>6</span><span>5</span></span></div>
-        <div class="opt"><b>E</b><span class="frac"><span>11</span><span>9</span></span></div>
-      </div></li>
-
-    <li><div class="q">Цена товара сначала выросла на 20&nbsp;%, а затем новая цена снизилась на 25&nbsp;%. Как итоговая цена соотносится с первоначальной?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>меньше на 10&nbsp;%</div>
-        <div class="opt"><b>B</b>меньше на 5&nbsp;%</div>
-        <div class="opt"><b>C</b>не изменилась</div>
-        <div class="opt"><b>D</b>больше на 5&nbsp;%</div>
-        <div class="opt"><b>E</b>больше на 10&nbsp;%</div>
-      </div></li>
-
-    <li><div class="q">Анна прошла первые 3 км со скоростью 6 км/ч, а следующие 3 км &mdash; со скоростью 2 км/ч. Какова её средняя скорость на всём пути?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>2,5 км/ч</div>
-        <div class="opt"><b>B</b>3 км/ч</div>
-        <div class="opt"><b>C</b>3,5 км/ч</div>
-        <div class="opt"><b>D</b>4 км/ч</div>
-        <div class="opt"><b>E</b>4,5 км/ч</div>
-      </div></li>
-
-    <li><div class="q">Периметр прямоугольника равен 34, а его площадь равна 60. Чему равна длина диагонали?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>10</div><div class="opt"><b>B</b>11</div><div class="opt"><b>C</b>12</div><div class="opt"><b>D</b>13</div><div class="opt"><b>E</b>14</div>
-      </div></li>
-
-    <li><div class="q">Сколько существует двузначных чисел, которые делятся на 7, но не делятся на 3?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>7</div><div class="opt"><b>B</b>8</div><div class="opt"><b>C</b>9</div><div class="opt"><b>D</b>10</div><div class="opt"><b>E</b>13</div>
-      </div></li>
-
-    <li><div class="q">Среднее арифметическое пяти чисел равно 12. Одно из чисел вычеркнули, и среднее арифметическое оставшихся четырёх стало равно 13. Какое число вычеркнули?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>5</div><div class="opt"><b>B</b>6</div><div class="opt"><b>C</b>7</div><div class="opt"><b>D</b>8</div><div class="opt"><b>E</b>10</div>
-      </div></li>
-
-    <li><div class="q">Сколько цифр в десятичной записи числа 2<sup>10</sup>&nbsp;&middot;&nbsp;5<sup>7</sup>?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>8</div><div class="opt"><b>B</b>9</div><div class="opt"><b>C</b>10</div><div class="opt"><b>D</b>11</div><div class="opt"><b>E</b>17</div>
-      </div></li>
-
-    <li><div class="q">В классе 8 учеников. Нужно выбрать команду из 3 человек, но двое из учеников поссорились и не могут находиться в команде одновременно. Сколькими способами можно выбрать команду?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>40</div><div class="opt"><b>B</b>44</div><div class="opt"><b>C</b>48</div><div class="opt"><b>D</b>50</div><div class="opt"><b>E</b>56</div>
-      </div></li>
-
-    <li><div class="q">В квадрат со стороной 8 вписана окружность. Чему равна площадь части квадрата, лежащей вне окружности?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>64 &minus; 8&pi;</div><div class="opt"><b>B</b>64 &minus; 16&pi;</div><div class="opt"><b>C</b>64 &minus; 32&pi;</div><div class="opt"><b>D</b>32 &minus; 16&pi;</div><div class="opt"><b>E</b>16 &minus; 4&pi;</div>
-      </div></li>
-
-    <li><div class="q">В арифметической прогрессии первый член равен 5, а разность равна 3. Каким по счёту членом прогрессии является число 302?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>99</div><div class="opt"><b>B</b>100</div><div class="opt"><b>C</b>101</div><div class="opt"><b>D</b>102</div><div class="opt"><b>E</b>103</div>
-      </div></li>
-
-    <li><div class="q">Действительное число <var>x</var> удовлетворяет равенству <var>x</var> + <span class="frac"><span>1</span><span><var>x</var></span></span> = 5. Чему равно <var>x</var><sup>3</sup> + <span class="frac"><span>1</span><span><var>x</var><sup>3</sup></span></span>?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>110</div><div class="opt"><b>B</b>115</div><div class="opt"><b>C</b>120</div><div class="opt"><b>D</b>125</div><div class="opt"><b>E</b>130</div>
-      </div></li>
-
-    <li><div class="q">Бросают два обычных игральных кубика. Какова вероятность того, что сумма выпавших очков &mdash; простое число?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b><span class="frac"><span>1</span><span>3</span></span></div>
-        <div class="opt"><b>B</b><span class="frac"><span>2</span><span>5</span></span></div>
-        <div class="opt"><b>C</b><span class="frac"><span>5</span><span>12</span></span></div>
-        <div class="opt"><b>D</b><span class="frac"><span>1</span><span>2</span></span></div>
-        <div class="opt"><b>E</b><span class="frac"><span>7</span><span>12</span></span></div>
-      </div></li>
-
-    <li><div class="q">В прямоугольном треугольнике катеты равны 6 и 8. Чему равен радиус вписанной в него окружности?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>1,5</div><div class="opt"><b>B</b>2</div><div class="opt"><b>C</b>2,4</div><div class="opt"><b>D</b>2,5</div><div class="opt"><b>E</b>3</div>
-      </div></li>
-
-    <li><div class="q">Каково наименьшее натуральное <var>n</var>, при котором <var>n</var>! делится на 2025?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>10</div><div class="opt"><b>B</b>11</div><div class="opt"><b>C</b>12</div><div class="opt"><b>D</b>15</div><div class="opt"><b>E</b>25</div>
-      </div></li>
-
-    <li><div class="q">Сколько существует целых чисел <var>n</var>, удовлетворяющих условию 1 &le; <var>n</var> &le; 100, для которых <var>n</var><sup>2</sup> + <var>n</var> делится на 6?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>33</div><div class="opt"><b>B</b>50</div><div class="opt"><b>C</b>66</div><div class="opt"><b>D</b>67</div><div class="opt"><b>E</b>83</div>
-      </div></li>
-
-    <li><div class="q">Чему равна площадь правильного шестиугольника со стороной 4?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>16&radic;3</div><div class="opt"><b>B</b>24&radic;3</div><div class="opt"><b>C</b>32&radic;3</div><div class="opt"><b>D</b>48&radic;3</div><div class="opt"><b>E</b>96</div>
-      </div></li>
-
-    <li><div class="q">Сколько существует четырёхзначных чётных чисел, все цифры которых различны и взяты из множества {1, 2, 3, 4, 5}?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>24</div><div class="opt"><b>B</b>36</div><div class="opt"><b>C</b>48</div><div class="opt"><b>D</b>60</div><div class="opt"><b>E</b>72</div>
-      </div></li>
-
-    <li><div class="q">Чему равна сумма всех натуральных делителей числа 360, включая 1 и само число?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>1024</div><div class="opt"><b>B</b>1080</div><div class="opt"><b>C</b>1120</div><div class="opt"><b>D</b>1170</div><div class="opt"><b>E</b>1260</div>
-      </div></li>
-
-    <li><div class="q">Чему равна сумма всех действительных корней уравнения |&thinsp;|<var>x</var> &minus; 2| &minus; 3&thinsp;| = 1?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>0</div><div class="opt"><b>B</b>4</div><div class="opt"><b>C</b>6</div><div class="opt"><b>D</b>8</div><div class="opt"><b>E</b>10</div>
-      </div></li>
-
-    <li><div class="q">В треугольнике <var>ABC</var> точка <var>D</var> лежит на стороне <var>BC</var> так, что <var>BD</var>&nbsp;:&nbsp;<var>DC</var> = 1&nbsp;:&nbsp;2. Точка <var>E</var> &mdash; середина отрезка <var>AD</var>. Прямая <var>BE</var> пересекает сторону <var>AC</var> в точке <var>F</var>. Чему равно отношение <var>AF</var>&nbsp;:&nbsp;<var>FC</var>?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>1 : 2</div><div class="opt"><b>B</b>2 : 5</div><div class="opt"><b>C</b>2 : 3</div><div class="opt"><b>D</b>1 : 4</div><div class="opt"><b>E</b>1 : 3</div>
-      </div></li>
-
-    <li><div class="q">Последовательность задана условиями <var>a</var><sub>1</sub> = 1 и <var>a</var><sub><var>n</var>+1</sub> = 2<var>a</var><sub><var>n</var></sub> + 1 для всех <var>n</var> &ge; 1. Чему равно <var>a</var><sub>10</sub>?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>511</div><div class="opt"><b>B</b>512</div><div class="opt"><b>C</b>1022</div><div class="opt"><b>D</b>1023</div><div class="opt"><b>E</b>2047</div>
-      </div></li>
-
-    <li><div class="q">Сколько целых чисел <var>x</var> удовлетворяют неравенству |<var>x</var> &minus; 3| + |<var>x</var> + 2| &lt; 9?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>7</div><div class="opt"><b>B</b>8</div><div class="opt"><b>C</b>9</div><div class="opt"><b>D</b>10</div><div class="opt"><b>E</b>11</div>
-      </div></li>
-
-    <li><div class="q">Каковы две последние цифры числа 3<sup>2025</sup>?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>01</div><div class="opt"><b>B</b>07</div><div class="opt"><b>C</b>27</div><div class="opt"><b>D</b>43</div><div class="opt"><b>E</b>83</div>
-      </div></li>
-
-    <li><div class="q">Из точки (0, 0) в точку (5, 5) идут пути по узлам решётки, состоящие из шагов вправо и вверх. Сколько существует таких путей, ни одна точка которых не лежит выше прямой <var>y</var> = <var>x</var>?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>14</div><div class="opt"><b>B</b>32</div><div class="opt"><b>C</b>42</div><div class="opt"><b>D</b>120</div><div class="opt"><b>E</b>252</div>
-      </div></li>
-
-    <li><div class="q">Чему равна сумма всех действительных чисел <var>x</var>, для которых (<var>x</var><sup>2</sup> &minus; 5<var>x</var> + 5)<sup>&thinsp;<var>x</var><sup>2</sup> &minus; 9<var>x</var> + 20</sup> = 1?</div>
-      <div class="opts">
-        <div class="opt"><b>A</b>9</div><div class="opt"><b>B</b>10</div><div class="opt"><b>C</b>13</div><div class="opt"><b>D</b>14</div><div class="opt"><b>E</b>15</div>
-      </div></li>
-
-  </ol>
-
-  <details class="answers">
-    <summary>Показать ответы и разбор</summary>
-    <div class="answers-body">
-      <div class="key">
-        <div><span>1</span> <b>C</b></div><div><span>2</span> <b>A</b></div><div><span>3</span> <b>B</b></div><div><span>4</span> <b>D</b></div><div><span>5</span> <b>C</b></div>
-        <div><span>6</span> <b>D</b></div><div><span>7</span> <b>A</b></div><div><span>8</span> <b>D</b></div><div><span>9</span> <b>B</b></div><div><span>10</span> <b>B</b></div>
-        <div><span>11</span> <b>A</b></div><div><span>12</span> <b>C</b></div><div><span>13</span> <b>B</b></div><div><span>14</span> <b>A</b></div><div><span>15</span> <b>C</b></div>
-        <div><span>16</span> <b>B</b></div><div><span>17</span> <b>C</b></div><div><span>18</span> <b>D</b></div><div><span>19</span> <b>D</b></div><div><span>20</span> <b>E</b></div>
-        <div><span>21</span> <b>D</b></div><div><span>22</span> <b>B</b></div><div><span>23</span> <b>D</b></div><div><span>24</span> <b>C</b></div><div><span>25</span> <b>E</b></div>
-      </div>
-
-      <div class="hints">
-        <p><b>1.</b> Числитель: 2(1+&hellip;+10) = 110; знаменатель: сумма первых 10 нечётных = 100. Ответ 11/10.</p>
-        <p><b>2.</b> Множители: 1,2&nbsp;&middot;&nbsp;0,75 = 0,9 &mdash; меньше на 10&nbsp;%.</p>
-        <p><b>3.</b> Весь путь 6 км, всё время 0,5 + 1,5 = 2 ч: средняя 3 км/ч.</p>
-        <p><b>4.</b> <var>x</var> + <var>y</var> = 17, <var>xy</var> = 60: диагональ&sup2; = 17&sup2; &minus; 2&middot;60 = 169, диагональ 13.</p>
-        <p><b>5.</b> Кратных 7 среди двузначных &mdash; 13; из них кратных 21 &mdash; 4. Ответ 9.</p>
-        <p><b>6.</b> 5&middot;12 &minus; 4&middot;13 = 60 &minus; 52 = 8.</p>
-        <p><b>7.</b> 2<sup>10</sup>&middot;5<sup>7</sup> = 2&sup3;&middot;10<sup>7</sup> = 8&middot;10<sup>7</sup>: 8 цифр.</p>
-        <p><b>8.</b> Всего C(8,3) = 56; команд с обоими поссорившимися C(6,1) = 6. Ответ 50.</p>
-        <p><b>9.</b> 64 &minus; &pi;&middot;4&sup2; = 64 &minus; 16&pi;.</p>
-        <p><b>10.</b> 302 = 5 + 3(<var>n</var> &minus; 1): <var>n</var> = 100.</p>
-        <p><b>11.</b> <var>s</var>&sup3; &minus; 3<var>s</var> = 125 &minus; 15 = 110.</p>
-        <p><b>12.</b> Простые суммы 2, 3, 5, 7, 11: исходов 1 + 2 + 4 + 6 + 2 = 15 из 36, то есть 5/12.</p>
-        <p><b>13.</b> Для прямоугольного треугольника <var>r</var> = (6 + 8 &minus; 10)/2 = 2.</p>
-        <p><b>14.</b> 2025 = 3<sup>4</sup>&middot;5&sup2;. Пятёрок в <var>n</var>! нужно две &mdash; значит <var>n</var> &ge; 10; троек в 10! ровно &lfloor;10/3&rfloor; + &lfloor;10/9&rfloor; = 4, чего достаточно. Ответ 10.</p>
-        <p><b>15.</b> <var>n</var>(<var>n</var>+1) всегда чётно; делимость на 3 &mdash; при <var>n</var> &equiv; 0 или 2 (mod 3), два случая из трёх: 66.</p>
-        <p><b>16.</b> Шесть правильных треугольников: 6&middot;(&radic;3/4)&middot;16 = 24&radic;3.</p>
-        <p><b>17.</b> Последняя цифра 2 или 4; остальные три &mdash; из четырёх оставшихся: 2&middot;4&middot;3&middot;2 = 48.</p>
-        <p><b>18.</b> 360 = 2&sup3;&middot;3&sup2;&middot;5: сумма делителей 15&middot;13&middot;6 = 1170.</p>
-        <p><b>19.</b> |<var>x</var> &minus; 2| &minus; 3 = &plusmn;1, значит |<var>x</var> &minus; 2| = 4 или 2: корни 6, &minus;2, 4, 0; сумма 8.</p>
-        <p><b>20.</b> Метод масс: из <var>BD</var>&nbsp;:&nbsp;<var>DC</var> = 1&nbsp;:&nbsp;2 берём массы <var>B</var> = 2, <var>C</var> = 1, в точке <var>D</var> масса 3. <var>E</var> &mdash; середина <var>AD</var>, значит масса <var>A</var> = 3. Для <var>F</var> на <var>AC</var>: <var>AF</var>&nbsp;:&nbsp;<var>FC</var> = 1&nbsp;:&nbsp;3.</p>
-        <p><b>21.</b> <var>a</var><sub><var>n</var></sub> = 2<sup><var>n</var></sup> &minus; 1 (проверьте по первым членам): <var>a</var><sub>10</sub> = 1023.</p>
-        <p><b>22.</b> Между &minus;2 и 3 сумма равна 5 &lt; 9; края: справа <var>x</var> &lt; 5, слева <var>x</var> &gt; &minus;4. Целые от &minus;3 до 4: их 8.</p>
-        <p><b>23.</b> Порядок числа 3 по модулю 100 равен 20, а 2025 = 20&middot;101 + 5, поэтому 3<sup>2025</sup> &equiv; 3<sup>5</sup> = 243 &equiv; 43 (mod 100).</p>
-        <p><b>24.</b> Это числа Каталана: C<sub>5</sub> = 42. Вариант 14 &mdash; ловушка для строгого прочтения &laquo;ниже диагонали&raquo;.</p>
-        <p><b>25.</b> Основание 1 (<var>x</var> = 1, 4); основание &minus;1 при чётном показателе (<var>x</var> = 2, 3); показатель 0 при ненулевом основании (<var>x</var> = 5; корень 4 уже учтён). Сумма 1 + 4 + 2 + 3 + 5 = 15.</p>
-      </div>
-    </div>
-  </details>
-</section>
-
-<div class="notice" style="margin:0 0 3rem">
-  <strong>Материалы для подготовки.</strong> К этому тесту есть бесплатный <a href="course/index.html">крэш-курс подготовки за десять недель</a>: самодостаточный, родитель ведёт его без преподавателя — теория, разобранные задачи, самостоятельные порции с решениями, тесты и печатные PDF.
-</div>
-
-<footer>
-  Задачи составлены оригинально для этой подборки и не воспроизводят задания официальных олимпиад AMC. Официальные тесты прошлых лет и правила &mdash; на <a href="https://maa.org/student-programs/amc/">maa.org</a>. Дальше: <a href="course/index.html">крэш-курс подготовки за десять недель</a>.
-</footer>
-
-</div>
-
 </body>
 </html>

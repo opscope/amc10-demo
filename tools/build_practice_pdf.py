@@ -132,10 +132,10 @@ def page(lang):
 </body></html>"""
 
 CH = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
-for lang, out in [('ru', 'amc10-probnik-ru.pdf'), ('en', 'amc10-practice-en.pdf')]:
+for lang, out in [('ru', 'practice-test-ru.pdf'), ('en', 'practice-test.pdf')]:
     src = f'/tmp/print_{lang}.html'
     open(src, 'w', encoding='utf8').write(page(lang))
-    dst = f'/Users/andreikovrijnykh/amc10demo/kurs/{out}'
+    dst = f'/Users/andreikovrijnykh/amc10demo/course/{out}'
     subprocess.run([CH, '--headless', '--disable-gpu', f'--print-to-pdf={dst}',
                     '--no-pdf-header-footer', 'file://' + src], capture_output=True)
     print(out, os.path.getsize(dst) // 1024, 'KB')

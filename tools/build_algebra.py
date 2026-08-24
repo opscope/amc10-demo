@@ -4,9 +4,9 @@
 import re, os, sys, subprocess
 SCR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCR)
-from blok1_data_a import L11, L12
-from blok1_data_b import L13, L14
-from blok1_data_c import L15, T1, STARS
+from algebra_data_a import L11, L12
+from algebra_data_b import L13, L14
+from algebra_data_c import L15, T1, STARS
 
 LESSONS = [L11, L12, L13, L14, L15]
 SITE = '/Users/andreikovrijnykh/amc10demo'
@@ -17,7 +17,7 @@ FONTS = '\n'.join(re.findall(r'@font-face\{[^}]+\}', idx))
 FAV = re.search(r'<link rel="icon"[^>]+>', idx).group(0)
 GC = re.search(r'<script data-goatcounter[^<]+</script>', idx, re.S).group(0)
 ROOT = re.search(r':root\{.*?\}', idx, re.S).group(0)
-CSS = open(f'{SCR}/kurs-style.css', encoding='utf8').read() + """
+CSS = open(f'{SCR}/course-style.css', encoding='utf8').read() + """
 .chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1.2rem 0 0; }
 .chips a { font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--tang-deep); text-decoration: none; border: 1px solid var(--rule-strong); padding: .3rem .7rem; }
 .chips a:hover { background: var(--paper); }
@@ -60,7 +60,7 @@ S = {
    pdfs='Для печати:', pdf_lessons='уроки блока 1 (PDF)', pdf_test='тест Т1 (PDF)',
    header_eyebrow='Крэш-курс AMC 10 &middot; Блок 1', header_h1='Блок 1 &mdash; Алгебра',
    header_stand='Пять уроков и тест: проценты и отношения, уравнения и прогрессии, квадратный трёхчлен, тождества и трюки, модуль. Каждый урок &mdash; 45 + 45 минут.',
-   lesson_word='урок', otherlang='English version', otherhref='blok1-en.html',
+   lesson_word='урок', otherlang='English version', otherhref='algebra.html',
    foot='Задачи курса составлены оригинально и не воспроизводят задания официальных олимпиад AMC. <a href="index.html">Оглавление курса</a> &middot; <a href="../index.html">справка об AMC 10 и пробный тест</a> &middot; <a href="index.html#svyaz">оставить комментарий</a>.',
    title='Блок 1 · Алгебра · Крэш-курс AMC 10',
    desc='Алгебра для AMC 10: пять уроков с теорией, разобранными задачами, самостоятельными порциями и тест блока.'),
@@ -76,7 +76,7 @@ S = {
    pdfs='Printable:', pdf_lessons='Block 1 lessons (PDF)', pdf_test='Test T1 (PDF)',
    header_eyebrow='AMC 10 Crash Course &middot; Block 1', header_h1='Block 1 &mdash; Algebra',
    header_stand='Five lessons and a test: percents and ratios, equations and sequences, quadratics, identities and tricks, absolute value. Each lesson is 45 + 45 minutes.',
-   lesson_word='lesson', otherlang='Русская версия', otherhref='blok1.html',
+   lesson_word='lesson', otherlang='Русская версия', otherhref='algebra-ru.html',
    foot='All problems are original and do not reproduce official AMC competition problems. <a href="index.html">Course contents</a> &middot; <a href="../index.html">AMC 10 overview and practice test</a> (in Russian).',
    title='Block 1 · Algebra · AMC 10 Crash Course',
    desc='Algebra for the AMC 10: five lessons with theory, worked examples, independent sets, and the block test.'),
@@ -128,7 +128,7 @@ def t1_html(g):
 <div class="key">{keyc}</div>
 <p style="font-size:.85rem;color:var(--mist);margin-bottom:1rem">{s['keywarn']}</p>
 <div class="hints">{hints}</div></div></details>
-<div class="pdfline"><strong>{s['pdfs']}</strong> <a href="{'blok1-uroki-ru.pdf' if g=='ru' else 'blok1-lessons-en.pdf'}">{s['pdf_lessons']}</a> &middot; <a href="{'t1-test-ru.pdf' if g=='ru' else 't1-test-en.pdf'}">{s['pdf_test']}</a></div>
+<div class="pdfline"><strong>{s['pdfs']}</strong> <a href="{'algebra-lessons-ru.pdf' if g=='ru' else 'algebra-lessons.pdf'}">{s['pdf_lessons']}</a> &middot; <a href="{'algebra-test-ru.pdf' if g=='ru' else 'algebra-test.pdf'}">{s['pdf_test']}</a></div>
 </section>'''
 
 def page(g):
@@ -141,8 +141,8 @@ def page(g):
 <a href="index.html#ustroystvo">{'Как устроен' if g=='ru' else 'How it works'}</a>
 <a href="index.html#polzovanie">{'Как пользоваться' if g=='ru' else 'How to use it'}</a>
 <div class="nav-t">{'Программа' if g=='ru' else 'Program'}</div>
-<a href="blok0.html">0 · {'Диагностика' if g=='ru' else 'Diagnostics'}</a>
-<a class="here" href="{'blok1.html' if g=='ru' else 'blok1-en.html'}">1 · {'Алгебра' if g=='ru' else 'Algebra'}</a>
+<a href="diagnostics.html">0 · {'Диагностика' if g=='ru' else 'Diagnostics'}</a>
+<a class="here" href="{'algebra-ru.html' if g=='ru' else 'algebra.html'}">1 · {'Алгебра' if g=='ru' else 'Algebra'}</a>
 <a class="dim" href="index.html#programma">2 · {'Геометрия' if g=='ru' else 'Geometry'}</a>
 <a class="dim" href="index.html#programma">3 · {'Теория чисел' if g=='ru' else 'Number theory'}</a>
 <a class="dim" href="index.html#programma">4 · {'Комбинаторика' if g=='ru' else 'Counting'}</a>
@@ -227,7 +227,7 @@ PS = {
    tt='Крэш-курс AMC 10 · Тест Т1 · Алгебра', tsub='10 задач &middot; 30 минут &middot; без калькулятора &middot; порог 7 из 10',
    nd='<div class="nd" style="display:flex;gap:28px;font-size:9.5pt;margin-top:6px"><span style="flex:1;border-bottom:1px solid #000">Имя:</span><span style="flex:1;border-bottom:1px solid #000">Дата:</span></div>',
    kh='Ключ и разбор', kwarn='Страница для родителя: отрезать или не распечатывать для ученика.',
-   foot='Задачи составлены оригинально и не воспроизводят задания официальных олимпиад AMC &middot; opscope.github.io/amc10-demo/kurs/'),
+   foot='Задачи составлены оригинально и не воспроизводят задания официальных олимпиад AMC &middot; opscope.github.io/amc10-demo/course/'),
  'en': dict(lt='AMC 10 Crash Course · Block 1 · Algebra · Lessons 1.1–1.5',
    lsub='Theory, worked examples, and independent sets. Solutions to the independent sets are at the end of the file.',
    theory='Theory', worked='Worked examples', selfp='Independent set',
@@ -235,7 +235,7 @@ PS = {
    tt='AMC 10 Crash Course · Test T1 · Algebra', tsub='10 problems &middot; 30 minutes &middot; no calculator &middot; mastery bar 7 of 10',
    nd='<div class="nd" style="display:flex;gap:28px;font-size:9.5pt;margin-top:6px"><span style="flex:1;border-bottom:1px solid #000">Name:</span><span style="flex:1;border-bottom:1px solid #000">Date:</span></div>',
    kh='Answer Key and Review', kwarn='Parent page: cut off or do not print for the student.',
-   foot='All problems are original and do not reproduce official AMC competition problems &middot; opscope.github.io/amc10-demo/kurs/'),
+   foot='All problems are original and do not reproduce official AMC competition problems &middot; opscope.github.io/amc10-demo/course/'),
 }
 
 def strip_details(html):
@@ -288,10 +288,10 @@ def render_pdf(html, out):
                     '--no-pdf-header-footer', 'file://' + src], capture_output=True)
     print(os.path.basename(out), os.path.getsize(out) // 1024, 'KB')
 
-open(f'{SITE}/kurs/blok1.html', 'w', encoding='utf8').write(page('ru'))
-open(f'{SITE}/kurs/blok1-en.html', 'w', encoding='utf8').write(page('en'))
+open(f'{SITE}/course/algebra-ru.html', 'w', encoding='utf8').write(page('ru'))
+open(f'{SITE}/course/algebra.html', 'w', encoding='utf8').write(page('en'))
 print('pages written')
-render_pdf(pdf_lessons('ru'), f'{SITE}/kurs/blok1-uroki-ru.pdf')
-render_pdf(pdf_lessons('en'), f'{SITE}/kurs/blok1-lessons-en.pdf')
-render_pdf(pdf_test('ru'), f'{SITE}/kurs/t1-test-ru.pdf')
-render_pdf(pdf_test('en'), f'{SITE}/kurs/t1-test-en.pdf')
+render_pdf(pdf_lessons('ru'), f'{SITE}/course/algebra-lessons-ru.pdf')
+render_pdf(pdf_lessons('en'), f'{SITE}/course/algebra-lessons.pdf')
+render_pdf(pdf_test('ru'), f'{SITE}/course/algebra-test-ru.pdf')
+render_pdf(pdf_test('en'), f'{SITE}/course/algebra-test.pdf')
