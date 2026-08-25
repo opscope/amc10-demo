@@ -71,8 +71,8 @@ S = {
    foot='Задачи курса составлены оригинально и не воспроизводят задания официальных олимпиад AMC. <a href="index.html">Оглавление курса</a> &middot; <a href="../../index.html">справка об AMC 10 и пробный тест</a> &middot; <a href="index.html#svyaz">оставить комментарий</a>.',
    title='Блок 1 · Алгебра · Крэш-курс AMC 10',
    desc='Алгебра для AMC 10: пять уроков с теорией, разобранными задачами, самостоятельными порциями и тест блока.'),
- 'en': dict(theory='Theory (15 minutes)', worked='Worked examples (30 minutes)',
-   selfp='Independent set (30 minutes, then 15 for review)',
+ 'en': dict(theory='Concepts (15 minutes)', worked='Worked examples (30 minutes)',
+   selfp='On-your-own set (30 minutes, then 15 for review)',
    selfnote='Open the hint only after a genuine attempt; open the solution after you have an answer, or after a second attempt.',
    star='Challenge problem (AMC #11&ndash;15 level)',
    hint='Hint', sol='Solution', parent='Parent review (15 minutes)',
@@ -332,10 +332,11 @@ def render_pdf(html, out):
                     '--no-pdf-header-footer', 'file://' + src], capture_output=True)
     print(os.path.basename(out), os.path.getsize(out) // 1024, 'KB')
 
-open(f'{SITE}/course/amc10/algebra-ru.html', 'w', encoding='utf8').write(page('ru'))
-open(f'{SITE}/course/amc10/algebra.html', 'w', encoding='utf8').write(page('en'))
-print('pages written')
-render_pdf(pdf_lessons('ru'), f'{SITE}/course/amc10/algebra-lessons-ru.pdf')
-render_pdf(pdf_lessons('en'), f'{SITE}/course/amc10/algebra-lessons.pdf')
-render_pdf(pdf_test('ru'), f'{SITE}/course/amc10/algebra-test-ru.pdf')
-render_pdf(pdf_test('en'), f'{SITE}/course/amc10/algebra-test.pdf')
+if __name__ == '__main__':
+    open(f'{SITE}/course/amc10/algebra-ru.html', 'w', encoding='utf8').write(page('ru'))
+    open(f'{SITE}/course/amc10/algebra.html', 'w', encoding='utf8').write(page('en'))
+    print('pages written')
+    render_pdf(pdf_lessons('ru'), f'{SITE}/course/amc10/algebra-lessons-ru.pdf')
+    render_pdf(pdf_lessons('en'), f'{SITE}/course/amc10/algebra-lessons.pdf')
+    render_pdf(pdf_test('ru'), f'{SITE}/course/amc10/algebra-test-ru.pdf')
+    render_pdf(pdf_test('en'), f'{SITE}/course/amc10/algebra-test.pdf')
