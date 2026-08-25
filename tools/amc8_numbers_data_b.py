@@ -56,7 +56,7 @@ L13 = {
    'hint': {'ru': 'Во сколько раз 20 больше 4?', 'en': 'How many times larger than 4 is 20?'},
    'sol': {'ru': 'В 5 раз: <var>x</var> = 3&middot;5 = <b>15</b>.', 'en': 'Five times: <var>x</var> = 3&middot;5 = <b>15</b>.'}},
   {'q': {'ru': 'В сплаве медь и цинк в отношении 2 : 3. Меди 14 кг. Сколько весит весь сплав?', 'en': 'A trail mix has raisins and peanuts in the ratio 2:3. There are 14 ounces of raisins. How many ounces does the whole mix weigh?'},
-   'hint': {'ru': 'Скольким частям отвечает изюм?', 'en': 'How many parts do the raisins account for?'},
+   'hint': {'ru': 'Скольким частям отвечает медь?', 'en': 'How many parts do the raisins account for?'},
    'sol': {'ru': 'Часть 7 кг, всего 5 частей: <b>35 кг</b>.', 'en': 'One part is 7 oz, five parts in all: <b>35 oz</b>.'}},
   {'q': {'ru': 'Отношение мальчиков к девочкам в классе 4 : 5, девочек на 3 больше. Сколько всего учеников?', 'en': 'The ratio of boys to girls in a class is 4 : 5, and there are 3 more girls than boys. How many students are there in all?'},
    'hint': {'ru': 'Скольким частям равна разница между девочками и мальчиками?', 'en': 'How many parts is the difference between girls and boys?'},
