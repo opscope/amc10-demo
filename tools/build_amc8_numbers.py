@@ -102,7 +102,7 @@ def nav(g):
 <a href="practice-test-ru.html">Пробный тест</a>
 <a href="diagnostics-ru.html">0 · Диагностика</a>
 <a class="here" href="numbers-ru.html">1 · Числа и арифметика</a>
-<a class="dim" href="index.html#programma">2 · Геометрия</a>
+<a href="geometry-ru.html">2 · Геометрия</a>
 <a class="dim" href="index.html#programma">3 · Счёт и вероятность</a>
 <a class="dim" href="index.html#programma">4 · Логика и текстовые</a>
 <a class="dim" href="index.html#programma">5 · Стратегия и прогоны</a>
@@ -125,7 +125,7 @@ def nav(g):
 <a href="practice-test.html">Practice test</a>
 <a href="diagnostics.html">0 · Diagnostics</a>
 <a class="here" href="numbers.html">1 · Numbers and arithmetic</a>
-<a class="dim" href="index-en.html#program">2 · Geometry</a>
+<a href="geometry.html">2 · Geometry</a>
 <a class="dim" href="index-en.html#program">3 · Counting and probability</a>
 <a class="dim" href="index-en.html#program">4 · Logic and word problems</a>
 <a class="dim" href="index-en.html#program">5 · Strategy and mock runs</a>

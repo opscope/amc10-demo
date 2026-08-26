@@ -156,10 +156,10 @@ def page(g):
 <a href="index.html#polzovanie">Как пользоваться</a>
 <a href="diagnostics-ru.html">0 · Диагностика</a>
 <a class="here" href="algebra-ru.html">1 · Алгебра</a>
-<a class="dim" href="index.html#programma">2 · Геометрия</a>
-<a class="dim" href="index.html#programma">3 · Теория чисел</a>
-<a class="dim" href="index.html#programma">4 · Комбинаторика</a>
-<a class="dim" href="index.html#programma">5 · Стратегия и моки</a>
+<a href="geometry-ru.html">2 · Геометрия</a>
+<a href="number-theory-ru.html">3 · Теория чисел</a>
+<a href="counting-ru.html">4 · Комбинаторика</a>
+<a href="strategy-ru.html">5 · Стратегия и моки</a>
 <a href="index.html#svyaz">Комментарии</a>
 </details>
 <details name="course"><summary>AMC 12</summary>
@@ -182,10 +182,10 @@ def page(g):
 <a href="index-en.html#use">How to use it</a>
 <a href="diagnostics.html">0 · Diagnostics</a>
 <a class="here" href="algebra.html">1 · Algebra</a>
-<a class="dim" href="index-en.html#program">2 · Geometry</a>
-<a class="dim" href="index-en.html#program">3 · Number theory</a>
-<a class="dim" href="index-en.html#program">4 · Counting</a>
-<a class="dim" href="index-en.html#program">5 · Strategy and mocks</a>
+<a href="geometry.html">2 · Geometry</a>
+<a href="number-theory.html">3 · Number theory</a>
+<a href="counting.html">4 · Counting</a>
+<a href="strategy.html">5 · Strategy and mocks</a>
 <a href="index-en.html#contact">Comments</a>
 </details>
 <details name="course"><summary>AMC 12</summary>
