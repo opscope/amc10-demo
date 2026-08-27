@@ -140,7 +140,7 @@ def t1_html(g):
 
 def page(g):
     s = S[g]
-    chips = ''.join(f'<a href="#{L["anchor"]}">{L["id"]}</a>' for L in LESSONS) + '<a href="#t1">Т1</a>' if g == 'ru' else ''.join(f'<a href="#{L["anchor"]}">{L["id"]}</a>' for L in LESSONS) + '<a href="#t1">T1</a>'
+    chips = ''.join(f'<a href="#{L["anchor"]}">{L["id"]}</a>' for L in LESSONS) + '<a href="#t1">Т1</a><a href="#toolkit">И</a>' if g == 'ru' else ''.join(f'<a href="#{L["anchor"]}">{L["id"]}</a>' for L in LESSONS) + '<a href="#t1">T1</a><a href="#toolkit">TK</a>'
     lessons = '\n'.join(lesson_html(L, g) for L in LESSONS)
     d1 = 'class="here"'
     if g == 'ru':
@@ -206,6 +206,7 @@ def page(g):
 </header>
 {lessons}
 {t1_html(g)}
+{toolkit_html(g)}
 <footer>{s['foot']}</footer>
 </main>
 </div>'''
@@ -282,6 +283,59 @@ PS = {
    foot='All problems are original and do not reproduce official AMC competition problems &middot; opscope.github.io/amc10-demo/course/amc10/'),
 }
 
+
+# ---------- Инструментарий (факультатив) ----------
+TK = {
+ 'ru': dict(
+   h='Инструментарий: полтора часа хитрых приёмов',
+   eyebrow='Крэш-курс AMC 10 &middot; Блок 1 &middot; Факультатив',
+   frame='Этот раздел &mdash; НЕ часть базовых 7,5 часов блока. Он для случая, когда короткий курс уже пройден, тест Т1 сдан, и алгебру хочется усилить глубже. Полтора часа разбора: шесть приёмов по 15 минут, на каждый &mdash; две задачи уровня AMC №12&ndash;18 с полным решением. Режим работы: сначала честная попытка (5&ndash;7 минут на задачу), потом разбор &mdash; читать решение до попытки бессмысленно, приём не запомнится.',
+   min_word='мин', prob_word='Задача',
+   pdfline='<strong>Для печати:</strong> <a href="algebra-toolkit-ru.pdf">инструментарий (PDF)</a>',
+   pdft='Крэш-курс AMC 10 · Блок 1 · Инструментарий', pdfsub='Факультатив после блока: шесть приёмов, двенадцать задач №12&ndash;18 с полными разборами. Делать после короткого курса и Т1.'),
+ 'en': dict(
+   h='The Toolkit: ninety minutes of clever techniques',
+   eyebrow='AMC 10 Crash Course &middot; Block 1 &middot; Optional deep dive',
+   frame='This section is NOT part of the block&rsquo;s core 7.5 hours. It is for the moment when the short course is done, Test T1 is passed, and you want to push algebra deeper. Ninety minutes of worked problems: six techniques, 15 minutes each, two problems at AMC #12&ndash;18 level per technique, fully solved. How to use it: an honest attempt first (5&ndash;7 minutes per problem), then the solution &mdash; reading the solution before trying defeats the purpose.',
+   min_word='min', prob_word='Problem',
+   pdfline='<strong>Printable:</strong> <a href="algebra-toolkit.pdf">the Toolkit (PDF)</a>',
+   pdft='AMC 10 Crash Course · Block 1 · The Toolkit', pdfsub='An optional deep dive after the block: six techniques, twelve problems at #12&ndash;18 with full solutions. For after the short course and T1.'),
+}
+
+def toolkit_html(g):
+    from algebra_toolkit_data import TOOLKIT
+    t = TK[g]
+    items = []
+    for it in TOOLKIT['items']:
+        iid = it['id'] if g == 'ru' else it['id_en']
+        probs = ''.join(f"""<div class="wp"><div class="wp-num">{p['tag'][g]}</div><div>{p['q'][g]}</div>
+<div class="sol"><b>{'Решение' if g == 'ru' else 'Solution'}.</b> {p['sol'][g]}</div></div>""" for p in it['probs'])
+        items.append(f"""<h3 id="{it['anchor']}">{iid} &middot; {it['title'][g]} <span style="font-weight:400;color:var(--mist);font-size:.85em">&middot; {it['minutes']} {t['min_word']}</span></h3>
+<div class="theory"><p>{it['intro'][g]}</p></div>
+{probs}""")
+    return f"""<section class="lesson" id="toolkit">
+<div class="lesson-id">{t['eyebrow']}</div>
+<h2>{t['h']}</h2>
+<div class="theory"><p>{t['frame']}</p></div>
+{''.join(items)}
+<div class="pdfline">{t['pdfline']}</div>
+</section>"""
+
+def pdf_toolkit(g):
+    from algebra_toolkit_data import TOOLKIT
+    t = TK[g]
+    parts = []
+    for it in TOOLKIT['items']:
+        iid = it['id'] if g == 'ru' else it['id_en']
+        probs = ''.join(f'<div class="wp"><div class="wp-num">{p["tag"][g]}</div><div>{p["q"][g]}</div><div class="sol"><b>&rarr;</b> {p["sol"][g]}</div></div>' for p in it['probs'])
+        parts.append(f"<h2>{iid}. {it['title'][g]} ({it['minutes']} {t['min_word']})</h2><p>{it['intro'][g]}</p>{probs}")
+    return f"""<!DOCTYPE html><html lang="{g}"><head><meta charset="utf-8"><style>{PCSS}</style></head><body>
+<header><div class="t1h">{t['pdft']}</div><div class="t2h">{t['pdfsub']}</div></header>
+<p>{t['frame']}</p>
+{''.join(parts)}
+<div class="colophon">{PS[g]['foot']}</div>
+</body></html>"""
+
 def strip_details(html):
     return html
 
@@ -338,5 +392,7 @@ if __name__ == '__main__':
     print('pages written')
     render_pdf(pdf_lessons('ru'), f'{SITE}/course/amc10/algebra-lessons-ru.pdf')
     render_pdf(pdf_lessons('en'), f'{SITE}/course/amc10/algebra-lessons.pdf')
+    render_pdf(pdf_toolkit('ru'), f'{SITE}/course/amc10/algebra-toolkit-ru.pdf')
+    render_pdf(pdf_toolkit('en'), f'{SITE}/course/amc10/algebra-toolkit.pdf')
     render_pdf(pdf_test('ru'), f'{SITE}/course/amc10/algebra-test-ru.pdf')
     render_pdf(pdf_test('en'), f'{SITE}/course/amc10/algebra-test.pdf')
